@@ -76,6 +76,6 @@ We’ll use our knowledge of use the common practice of shadow copy deletion to 
 
 | Field                    | Definition |
 |--------------------------|---------------|
-| Classification           | Select the classification of the Security Event to be issued when the scheduled query has run and found matches. The Classification specifies how malicious the security event is, if at all. Classifications are shown in the Event Viewer, as previously discussed. They can be: <ul><li>Malicious</li><li>Suspicious</li><li>Inconclusive</li><li>Likely Safe</li><li>PUP (Potentially Unwanted Program)</li><li>Safe</li></ul> |
+| Classification           | Select the classification of the Security Event to be issued when the scheduled query has run and found matches. The Classification specifies how malicious the security event is, if at all. Classifications are shown in the Event Viewer, as previously discussed. They can be: *Malicious* *Suspicious* *Inconclusive* *Likely Safe* *PUP (Potentially Unwanted Program)* *Safe* |
 | Repeat Every/On          | These options enable you to define the frequency and schedule when this query will be run.   |
 | Trigger Playbook Actions | Specifies whether to allow FortiEDR to trigger the corresponding Playbook action of the triggered security event from the scheduled query. Enabling this checkbox allows FortiEDR to automatically apply the action of the Playbook that is assigned to the Collector Group the triggering device belongs to.   |
