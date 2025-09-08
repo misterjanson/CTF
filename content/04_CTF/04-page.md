@@ -30,7 +30,7 @@ Some endpoint security solutions can be configured to block some types of proces
 
 During the attack scenario we used a code injection technique to escalate priviliges. FortiEDR has out-of-the-box rules to prevent various types of injection techniques. 
 
-1. Click on *Incidents* in the FortiEDR Central Manager.
+1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. Click on the filter icon near the top of the window to open the detailed filtering pane.
 ![filter_icon](filter_icon.PNG)
 3. Using the *Rules* dropdown type `inject` to filter the available rules and then choose the "Injected Thread" rule. Click the *Apply Filters* button.
@@ -56,7 +56,7 @@ The Threat Hunting  activity events tables area can be used to easily add filter
 
 When you hover over an item in the table, a green and red button appear to its right. Click the green plus button to include that item as a filter or click the red minus button to exclude that item as a filter.
 
-1. Click *Threat Hunting* in the FortiEDR Central Manager.
+1. Click *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. Type `control.exe` in the filter dialog box and press *enter* to narrow down the results.
 3. Find the entry that has a source process of *control.exe* and a target process of *winlogon.exe*. Hover over each process and click the green plus button to add it to the filter criteria. 
 ![green_button](green_button.png?width=500px)

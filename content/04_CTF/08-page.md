@@ -34,7 +34,7 @@ Network intrusion detection and prevention systems that use network signatures t
 
 ### FortiEDR Prevention :police_officer:
 
-1. Click on *Incidents* in the FortiEDR Central Manager
+1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Find the incident where *cloud.exe* is spawned as a child process of *Windows_Update.exe*
 3. Review the event graph, noting that *cloud.exe* is making a network connection to IP *1.123.37.68*. Click on the *Investigate* button.
 ![](cc1.png?width=500px)
@@ -84,7 +84,7 @@ Monitor for web traffic to/from known-bad or suspicious domains and analyze traf
 
 A common threat hunting practice for organizations is to search for communications with new, and well known, command and control addresses. With FortiEDR you can simply use a free text query to check communication to the malicous IP address we just reviewed.
 
-1. Click on *Threat Hunting* in the FortiEDR Central Manager. 
+1. Click on *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/). 
 2. Perform a search for `1.123.37.68`
 3. Click on the entry to show details of this connection, notice the remote port.
 4. Click the *Investigation View* button to open a new window for further inspection.

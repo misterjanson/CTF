@@ -47,7 +47,7 @@ FortiEDR has out-of-the-box policies that are comprised of comprehensive rules t
 
 Of particular interest to the *Reconnaissance* tactic is FortiEDR's **Exfiltration Prevention** policy. This policy enables FortiEDR to distinguish which connection establishment requests are malicious ones. 
 
-1. Click on *Security Settings > Security Events > Security Policies* in the FortiEDR Central Manager.
+1. Click on *Security Settings > Security Events > Security Policies* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. Click on *Exfiltration Prevention* to expand the policy and show all subsequent rules. 
 ![exfil_prevent](exfil_prevention.png?width=500px)
 
@@ -76,7 +76,7 @@ The LockBit ransomware scans for ports 135 and 445 which is captured by the Fort
 
 The continuous, realtime collection of Threat Hunting data produces numerous activity events. The sheer volume of activity data can make working directly with these activity events seem cumbersome at times. Therefore, FortiEDR uses **facets** to summarize the data displayed in the results tables. **Facets** are predefined in FortiEDR and represent the same data that is displayed in the results tables, but in an aggregated form. As such, facets represent the aggregation of the values in the results tables.
 
-1. Login to the FortiEDR Central Manager.
+1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. Click on *Threat Hunting*.
 3. In the Filters dialog box simple type `Lockbit.exe` and press enter. This will display numerous entries in the Activities Event Table.
 4. Click the small *triangle* below the *filter* section to reveal the **Facets and Results Tables**.

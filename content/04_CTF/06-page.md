@@ -36,7 +36,7 @@ Do not put user or admin domain accounts in the local administrator groups acros
 
 FortiEDR has the ability to block credential access attemps out-of-the-box.
 
-1. Click *Incidents* in the FortiEDR Central Manager
+1. Click *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Review the incident for *winlogon.exe* on the device *The-Flame* that shows the injected process attempt to connect to credentials.
 ![](creds1.png?width=500px)
 3. Go to *Security Settings > Security Events > Security Policies*. Expand the *Exfiltration Prevention* policy and review the first rule *Access to Critical System Information*. 
@@ -53,7 +53,7 @@ Monitor for unexpected processes interacting with LSASS.exe.
 
 ### FortiEDR Detection :detective:
 
-1. Go to *Threat Hunting* in the FortiEDR Central Manager.
+1. Go to *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. Do a free text query for `lsass.exe`
 3. Review the various entries of processes that are observed interacting with the [Local Security Authority Subsystem Service](https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service)
 4. Make note of whether lsass.exe is the source process or the target process. How might you compare this difference in behavior to identify possible malicious behavior from normal behavior?

@@ -1,6 +1,6 @@
 ---
-title: New 7.0 Feature Details
-menuTitle: New Features
+title: FortiEDR 7.0 Details
+menuTitle: FortiEDR 7.0 Details
 weight: 5
 ---
 FortiEDR 7.0 offers multiple new features that will move the product line further ahead in terms of capabilities and security coverage. 

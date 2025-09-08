@@ -1,8 +1,15 @@
 ---
-title: MITRE ATT&CK®
-menuTitle: MITRE ATT&CK®
-weight: 40
+title: MITRE ATT&CK
+menuTitle: MITRE ATT&CK
+weight: 10
 ---
+
+The goal of this workshop is not to just learn how to use a specific tool, or tools, but to also leverage a common framework used in the InfoSec industry. With that in mind the [MITRE ATT&CK®](https://attack.mitre.org/) framework will serve as a foundational reference tool through the lab exercises. This page provides key information on MITRE ATT&CK® and you'll also use the publicly available MITRE ATT&CK® knowledge base to find information.
+
+We strongly believe that a basic understanding of this framework will make you a better security practitioner. Additionally, you will find MITRE ATT&CK® referenced in may Fortinet products.
+
+## Overview
+
 [MITRE ATT&CK®](https://attack.mitre.org/) is a globally-accessible knowledge base of adversary tactics and techniques based on real-world observations. The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the private sector, in government, and in the cybersecurity product and service community.
 
 FortiEDR stands out in its ability to provide rapid insights. It fuses deep analytic capabilities with a detailed understanding of the MITRE ATT&CK framework. This harmonization empowers organizations to anticipate and tackle threats, such as nation-state threats, which pose severe security concerns for enterprises globally.
