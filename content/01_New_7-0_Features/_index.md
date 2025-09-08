@@ -1,6 +1,6 @@
 ---
-title: What's new in FortiEDR 7.0
-menuTitle: What's new in FortiEDR 7.0
+title: CTF with FEDR & FAZ
+menuTitle: CTF with FEDR & FAZ
 weight: 10
 ---
 ![](FortiEDR_Icon.png?width=300px)

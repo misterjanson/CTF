@@ -10,17 +10,23 @@ The instructor will perform a live attack demonstration using the following netw
 
 ![](attack-topology.png?width=600px)
 
-Students will have access to the FortiEDR Console (Central Manager) to perform review and investigation. 
+Students will have access to the FortiEDR Console (Central Manager) and FortiAnalyzer to perform review and investigation.
 
 ## Authentication Information
 
 Credentials to the FortiEDR Central Manager is the same for all users.
 | Access | Details |
 |-----|--------------------------------------|
-| URL | https://fortinetxperts.fortiedr.com/ |
-| user | `xperts24` |
+| URL | https://xperts2025.fortiedr.com/ |
+| user | `xperts25` |
 | password | `xPerts_54321$` |
-| organization name | `Xperts` |
+
+Credentials to the FortiAnalyzer is the same for all users.
+| Access | Details |
+|-----|--------------------------------------|
+| URL | https://98.82.30.66/ |
+| user | `xperts25` |
+| password | `xPerts_54321$` |
 
 ## Going Further :rocket:
 

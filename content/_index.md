@@ -1,19 +1,18 @@
 ---
-title: Ransomware Fears FortiEDR 7.0
+title: Capture The Flag with FEDR & FAZ
 weight: 1
 archetype: home
 ---
-![Alt text](xperts2024_logo.PNG)
-
+![alt text](xperts2025_logo.PNG)
 ## Workshop Guide
 
 **Written By:** Jason Palm & Jason Graun
 
-![Alt text](EDR_Overall.png?width=400px)
+![alt text](Threat-Detection-and-Response.png?width=400px)
 
-FortiEDR delivers real-time, automated endpoint protection with orchestrated incident response across any protected device. This protection includes workstations, servers, and cloud workloads with current and legacy operating systems, as well as manufacturing and OT systems. FortiEDR features native integrations with the Fortinet Security Fabric along with numerous third-party solutions.
+FortiEDR and FortiAnalyzer work together to give SOC analysts the visibility and tools needed for effective threat hunting. FortiEDR provides real-time endpoint telemetry, behavioral monitoring, and forensic timelines, allowing analysts to investigate IOCs, detect suspicious activity, and contain compromised hosts. FortiAnalyzer centralizes logs from across the network, correlates events, integrates threat intelligence, and offers advanced querying and dashboards aligned to MITRE ATT&CK. Together, they enable analysts to pivot between endpoint and network data, spot multi-vector attacks, and proactively hunt for threats before they escalate.
 
-During this workshop we will cover new features and aspects of FortiEDR 7.0. We will then present a live attack scenario so that you can observe how attackers utilize various tactics and techniques to attack networks of all sizes. Finally, you will get hands on with FortiEDR 7.0 to understand why ransomware (and other malicious attacks) fear FortiEDR 7.0. All of this will be done while educating you on the MITRE ATT&CK framework so that you understand how to operationalize this open source information to properly defend your networks.
+In this hands-on workshop you will step into the role of a SOC Analyst where you’ll learn how to hunt for threats using FortiEDR and FortiAnalyzer. You will gain practical experience mapping adversary tactics and techniques to the MITRE ATT&CK framework while investigating a live attack scenario. Throughout the session, you will uncover "flags" hidden in the environment, answer guided questions, and score points as you progress—turning learning into a competitive, interactive challenge.
 
 ## Images
 

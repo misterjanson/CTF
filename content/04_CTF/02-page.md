@@ -38,7 +38,7 @@ Block execution of code on a system through application control, and/or script b
 
 FortiEDR provides multiple out-of-the-box policies. Each policy comes with multiple highly intelligent rules that enforce it. In regards to how FortiEDR can stop the malicious file that was executed in the attack scenario let's look at a FortiEDR security policy.
 
-1. Login to the FortiEDR Central Manager
+1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Click on *Security Settings > Security Events > Security Policies.*
 3. The Security Policies page displays a row for each security policy. Each policy row can be expanded to show the rules that it contains. In this case we'll focus on the *Execution Prevention* policy. This policy blocks the execution of files that are identified as malicious or suspected to be malicious. For this policy, each file is analyzed to find evidence for malicious activity.
 
@@ -66,10 +66,9 @@ attacks like ransomware in real time.
 
 In this case the *Malicous File Detected* rule will satisfy the recommendation by MITRE to **mitigate** execution on a system. Let's review this rule in action for the *Windows_Update.exe* file that was downloaded during the attack scenario.
 
-1. Click on *Incidents* in the FortiEDR Central Manager
-2. Find the event for *Windows_Update.exe* and click on that line to expand a list of events. Incidents are shown descending by default (from newest to oldest).
+1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) and click on that line to expand a list of events. Incidents are shown descending by default (from newest to oldest).
 ![windows_update_event](windows_update_event.png?width=500px)
-3. Select the earliest event in the timeline. In addition to textual information that is displayed, the Event Graph tab provides an image depicting the process chain, such as connection establishment and data alteration, up to the action that was blocked.
+1. Select the earliest event in the timeline. In addition to textual information that is displayed, the Event Graph tab provides an image depicting the process chain, such as connection establishment and data alteration, up to the action that was blocked.
 
 ![](event_graph.png?width=500px)
 
@@ -102,7 +101,7 @@ Monitor for newly constructed files that are downloaded and executed on the user
 
 FortiEDR’s Threat Hunting functionality enables you to search for many types of Indicators of Compromise (IOCs) and malware across your entire environment in order to enable enhanced detection. Searching can be based on various attributes of files, registry keys and values, network, processes, event log and activity event types. The attributes are useful when considering MITRE's detection recommendations.
 
-1. Access the Threat Hunting page by clicking *Threat Hunting* in the FortiEDR Central Manager.
+1. Access the Threat Hunting page by clicking *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 
 The Threat Hunting page contains the following areas:
 

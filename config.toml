@@ -33,7 +33,7 @@ themeVariant = "Xperts2025"
 #themeVariant = "UseCase"
 
 # The banner text under Fortinet logo on the top left of the project. Better to be short.
-logoBannerText = "Example"
+logoBannerText = "CTF with FEDR & FAZ"
 # Small text under the title
 logoBannerSubText = "Internal Only"
 ################################# END EDITING #################################

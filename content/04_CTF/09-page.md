@@ -28,7 +28,7 @@ Consider implementing IT disaster recovery plans that contain procedures for tak
 
 ### FortiEDR Prevention :police_officer:
 
-1. Click on *Incidents* in the FortiEDR Central Manager
+1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Review the entry for VSSVC.exe.
 ![](vss1.png?width=500px)
 3. Using the skills you've learning in previous labs review this event to identify how FortiEDR is able to alert and block attempts to delete shadow copies.
@@ -45,7 +45,7 @@ After filtering the activity events displayed in the result tables, you can save
 
 We’ll use our knowledge of use the common practice of shadow copy deletion to inhibit system recovery to create a scheduled query. 
 
-1. Go to *Threat Hunting* in the FortiEDR Central Manager.
+1. Go to *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. In the Filters area use the following search criteria: ```Target.Process.CommandLine: ("Delete Shadows \/All \/Quiet")```
 3. In the Filters area, at the far right of the page, click the ellipses icon  and select *Save Query*.
 
