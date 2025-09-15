@@ -5,8 +5,6 @@ weight: 35
 ---
 In this lesson we'll explore how adversaries may use multiple tactics to achieve a particular action. One of the ways that adversaries use multiple tactics is when attempting to move laterally through a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain further access. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
 
-We'll look specifically at how Lockbit ransomware uses multiple tactics to achieve lateral movement.
-
 ### Tactic :gear:
 
 **Lateral Movement** [ID:TA0008](https://attack.mitre.org/tactics/TA0008/)
@@ -43,26 +41,19 @@ This technique cannot be easily mitigated with default system tools.
 
 ### FortiEDR Prevention :police_officer:
 
-FortiEDR has out-of-the-box policies that are comprised of comprehensive rules that offer extensive protection. In many cases, other vendors require that users manually create these rules which entails in-depth knowledge of how to identify a myriad of attacker's techniques.
+One of the most devastating aspects of a ransomware attack is that many variants have the ability to spread through a network once a single device is encrypted. One mechanism that FortiEDR can use to prevent further impact to a network is by using device **isolation**.
 
-Of particular interest to the *Reconnaissance* tactic is FortiEDR's **Exfiltration Prevention** policy. This policy enables FortiEDR to distinguish which connection establishment requests are malicious ones. 
+Automatic Incident Response (AIR) playbooks can be configured to isolate a device via the FortiEDR Collector, or to leverage FortiNAC for isolation. To view the configuration in the FortiEDR Central Manager navigate to *Security Settings > [Playbooks](https://xperts2025.fortiedr.com/#/security_settings/playbooks)* and expand the *Default Playbook*.
 
-1. Click on *Security Settings > Security Events > Security Policies* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
-2. Click on *Exfiltration Prevention* to expand the policy and show all subsequent rules. 
-![exfil_prevent](exfil_prevention.png?width=500px)
+![air_isolate](air_isolate.png?width=600px)
 
-The SECURITY POLICIES page displays a row for each security policy. Each policy row can be expanded to show the rules that it contains.
+**Isolate device with Collector**: This action blocks the communication to/from the affected Collector. This action only applies for endpoint Collectors. For example, if the Playbook policy is configured to isolate the device for a malicious event, then whenever a maliciously classified security event is triggered from a device, then that device is isolated (blocked) from communicating with the outside world (for both sending and receiving). 
 
-The following information is defined per security policy:
+A checkmark  in a classification column here means that the device is automatically isolated when a security event is triggered with that classification.
 
-| Information Field | Description |
-|-------------------|--------------|
-|Policy Name        |The policy name appears in the left most column. The policy name is defined when the policy is created. The name of the Default Policy cannot be changed.|
-|Rule Name          |FortiEDR’s proprietary rules come predefined and are the primary component of FortiEDR’s proprietary security solution. This column displays a short description for the purpose of this rule.|
-|Action             |Specifies the action that is enforced when this rule is violated. |
-|State              |(Enabled/Disabled) This option allows you to disable/enable this rule. FortiEDR’s rules have been created as a result of extensive expertise and experience. Therefore, we do not recommend disabling any of them.|
+![alt text](air_checkmark.png)
 
-{{% notice tip %}}You can expand the ADVANCED POLICY & RULES DATA area at the bottom left of the window to display a more detailed description of what the rule does and how it works.{{% /notice %}}
+**Isolate device with NAC**: This action blocks the communication to/from the affected device by disabling this host on an external Network Access Control system. A NAC connector must already be configured in order to perform this action. 
 
 ### Detection :mag:
 

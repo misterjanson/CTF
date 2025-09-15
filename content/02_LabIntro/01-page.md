@@ -16,7 +16,7 @@ FortiEDR stands out in its ability to provide rapid insights. It fuses deep anal
 
 By leveraging FortiEDR threat hunting capabilities and its ability to identify behavior along the MITRE ATT&CK framework, organizations can pinpoint related [Indicators of Compromise (IOCs)](https://www.fortinet.com/resources/cyberglossary/indicators-of-compromise) with unparalleled precision to enable a proactive stance against potential breach attempts. This holistic approach, rooted in insight and foresight, underscores the pivotal role of FortiEDR within an organization’s security strategy.
 
-In this section, we'll learn how to operationalize MITRE ATT&CK® along with FortiEDR to understand how threat actors operate, and how we can detect and prevent adversary tactics and techniques.
+In this section, we'll learn how to operationalize MITRE ATT&CK® to understand how threat actors operate, and how we can detect and prevent adversary tactics and techniques.
 
 ![matrix](matrix.PNG?width=500px)
 
