@@ -37,7 +37,7 @@ This type of attack technique cannot be easily mitigated with preventive control
 Although built-in Windows features cannot mitigate this technique FortiEDR does have policies in place to effectively thwart modifying of OS settings.
 
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
-2. Click on the incident for *Lockbit.exe*.
+2. Click on the incidents for *powershell.exe*.
 3. Look at the various incidents in the presented event graph to identify an incident showing an attempted change to the registry.
 
 ![lockbit_incident](lockbit_incident.png?width=500px)
@@ -61,14 +61,14 @@ Here we can see various details specific to this incident. Notice that FortiEDR 
 
 Monitor Registry for changes to run keys that do not correlate with known software, patch cycles, etc.
 
-### FortiEDR Detection :detective:
+### Fortinet Detection :detective:
 
 Each FortiEDR threat hunting activity event may be a part of a behavior and/or a MITRE Technique. 
 
 1. Click on *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. You can select which columns should appear in any of the tables using the Choose Columns option at the far right of the page. You can type in the Search box to help narrow the list of columns that display. Type `MITRE` and choose the *MITRE Tactic* column.
 ![choose_columns](choose_columns-1.png)
-3. In the filter dialog box enter `Source.Process.Name: ("Lockbit.exe") and MITRE.Tactic: ("Persistence")` and press *enter*. The activity events that have such behaviors and/or MITRE indications have values in the related columns in the activity events tables, as shown below:
+3. In the filter dialog box enter `MITRE.Tactic: ("Persistence")` and press *enter*. The activity events that have such behaviors and/or MITRE indications have values in the related columns in the activity events tables, as shown below:
 ![activity_events](activity_events.PNG?width=500px)
 4. When an activity event has a related MITRE indication, it is indicated in the Details pane. Click on one of the entries shown to expand the details pane. You can hover over the associated MITRE icon to display more details.
 ![mitre_details](mitre_details.png?width=500px)

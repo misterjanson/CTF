@@ -31,7 +31,11 @@ Consider implementing IT disaster recovery plans that contain procedures for tak
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Review the entry for VSSVC.exe.
 ![](vss1.png?width=500px)
-3. Using the skills you've learning in previous labs review this event to identify how FortiEDR is able to alert and block attempts to delete shadow copies.
+3. Based on this information login to FortiAnalyzer.
+4. Navigate to *Incidents & Events > Incidents > MITRE ATT&CK Coverage*.
+5. Under the *Impact* tactic column click the *Event Handler* icon for *Inhibit System Recovery*.
+![faz_inhibit](faz_inhibit.png?width=600px)
+6. Review the event handlers to identify which techniques are included in each event handler.
 
 ### Detection :mag:
 

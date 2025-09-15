@@ -37,7 +37,7 @@ During the attack scenario we used a code injection technique to escalate privil
 ![injected_thread](injected_thread.png?width=500px)
 4. Click on the entry for **control.exe**. Notice that the event graph shows the *control.exe* process injecting into the *winlogon.exe* process.
 ![inject_event](inject_event.png?width=500px)
-5. Click the *investigate* button to view this event in Investigation View.
+5. Click the *Investigate* button to view this event in Investigation View.
 6. Click the Event Analysis tab. Here we can see clearly in the provided graphic the steps in the injection along with the MITRE icon indicating once again FortiEDR associating this behavior with a MITRE tactic and technique. 
 ![investigate_injection](investigate_injection.png?width=500px)
 7. Click on the MITRE icon to view the tagged Tactics and Technique.
@@ -58,7 +58,7 @@ When you hover over an item in the table, a green and red button appear to its r
 
 1. Click *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
 2. Type `control.exe` in the filter dialog box and press *enter* to narrow down the results.
-3. Find the entry that has a source process of *control.exe* and a target process of *winlogon.exe*. Hover over each process and click the green plus button to add it to the filter criteria. 
+3. Find the entry that has a **source process** of *control.exe* and a **target process** of *winlogon.exe*. Hover over each process and click the green plus button to add it to the filter criteria. 
 ![green_button](green_button.png?width=500px)
 4. Once both processes have been added to the query you can now see how this view resembles what we previously reviewed in the Investigation View.
 ![filtered_buttons](filtered_activity_buttons.png?width=500px)

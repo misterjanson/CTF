@@ -39,7 +39,7 @@ FortiEDR has the ability to block credential access attemps out-of-the-box.
 1. Click *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Review the incident for *winlogon.exe* on the device *The-Flame* that shows the injected process attempt to connect to credentials.
 ![](creds1.png?width=500px)
-3. Go to *Security Settings > Security Events > Security Policies*. Expand the *Exfiltration Prevention* policy and review the first rule *Access to Critical System Information*. 
+3. Go to *Security Settings > Security Events > [Security Policies](https://xperts2025.fortiedr.com/#/security_settings/security_events/security-policies)*. Expand the *Exfiltration Prevention* policy and review the first rule *Access to Critical System Information*. 
 ![](vss2.png?width=500px)
 4. The *ADVANCED POLICY & RULE DATA* section at the bottom of the windows provide details on specific rules:
 > Rule Details
