@@ -37,7 +37,7 @@ This type of attack technique cannot be easily mitigated with preventive control
 Although built-in Windows features cannot mitigate this technique FortiEDR does have policies in place to effectively thwart modifying of OS settings.
 
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
-2. Click on the incidents for *powershell.exe*.
+2. Click on the incidents for *LockBit.exe*.
 3. Look at the various incidents in the presented event graph to identify an incident showing an attempted change to the registry.
 
 ![lockbit_incident](lockbit_incident.png?width=500px)
@@ -73,5 +73,8 @@ Each FortiEDR threat hunting activity event may be a part of a behavior and/or a
 4. When an activity event has a related MITRE indication, it is indicated in the Details pane. Click on one of the entries shown to expand the details pane. You can hover over the associated MITRE icon to display more details.
 ![mitre_details](mitre_details.png?width=500px)
 
-### Going Further :rocket:
-- Review this summary of how FortiEDR performed in the latest round MITRE evaluations: [Reveling in the MITRE ATT&CK Evaluation Results](https://www.fortinet.com/blog/business-and-technology/fortiedr-mitre-attack-evaluation-results)
+### Capture The Flag :checkered_flag:
+
+Review the Event Monitor in FortiAnalyzer to find the following:
+- What is the common MITRE Tactic name found on both The-Flame and JPalm-DC?
+- What MITRE Tech ID is assigned for this tactic?

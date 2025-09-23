@@ -131,7 +131,7 @@ We'll use this information to quickly take a look at the initial creation of the
 3. Click the **File** actions header to show only file activities of Lockbit.exe.
 4. Click on the **TIME** column header to sort the events ascending, so that we can view the oldest events first.
 ![02_TH](02_threat_hunting.png?width=500px)
-5. Locate an entry with the type of "File Create".
+5. Locate an entry with the type of *"File Create"*.
 6. Click anywhere in this row of the Activity Events table to display more details about the specific activity event in a Details pane on the right. The Details pane for an activity event contains a Summary tab, one or two other tabs, and the Investigation View button. The selected row is marked by a green border on its left.
 ![](file_create.png?width=500px)
 The Details pane for an activity event contains a Summary tab, one or two other tabs, and the Investigation View button, as follows:
@@ -149,3 +149,10 @@ The Details pane for an activity event contains a Summary tab, one or two other 
 ### Going Further :rocket:
 
 MITRE ATT&CK also provides information on threat [groups](https://attack.mitre.org/groups/) that are tracked by common names in the security community. Read about the [Sandworm Team](https://attack.mitre.org/groups/G0034/) that has been attributed to Russia's General Staff Main Intelligence Directorate (GRU) Main Center for Special Technologies (GTsST) military unit 74455. You can also read about [campaigns](https://attack.mitre.org/campaigns/) associated with these groups. For example, MITRE documents the Sandworm Team's techniques used during the [2015 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0028/).
+
+### Capture The Flag :checkered_flag:
+
+Use the FortiEDR Threat Hunting module to find the following:
+- What is the name of the server that LockBit.exe was uploaded to?
+- What is the SHA-256 hash of the uploaded LockBit.exe?
+- Find how to directly send this hash from FortiEDR to [VirusTotal](https://www.virustotal.com/). VirusTotal is a free online service that analyzes suspicious files, URLs, domains, and IP addresses for viruses, malware, and other cyber threats. VirusTotal also aggregates results from over 70 different antivirus engines, including those used by Fortinet.  What is the signature name that Fortinet has assigned to this file?

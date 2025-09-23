@@ -5,9 +5,7 @@ weight: 10
 ---
 ![](FortiEDR_Icon.png?width=300px)
 
-FortiEDR 7.0 delivers a host of new features highlighted by an updated UI focused on ease of use.
-
-{{% notice info %}}Although you will be working within the new FortiEDR 7.0 Central Manager (later in this workshop) many of the following features will be presented for you during the intructor overview.{{% /notice %}}
+FortiEDR 7.0 and FortiAnalyzer 7.6.4 delivers a host of new features that will be applicable for this workshop.
 
 ## Featured Items:
 

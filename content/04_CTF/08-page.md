@@ -37,16 +37,24 @@ Network intrusion detection and prevention systems that use network signatures t
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Find the incident where *cloud.exe* is spawned as a child process of *Windows_Update.exe*
 3. Review the event graph, noting that *cloud.exe* is making a network connection to IP *1.123.37.68*. Click on the *Investigate* button.
+
 ![](cc1.png?width=500px)
+
 4. Select the *Event Analysis* tab for this incident.
+
 ![](cc2.png)
+
 5. Click on the elipsis for *Incident Response* and expand the *Malicous* entry to reveal the Automatic Incident Response action.
+
 ![](cc3.png?width=500px)
+
 In this case FortiEDR has leveraged an integration with a FortiGate to block this IP due to a malicious classification.
+
 6. Click the elipsis for *Automated Analysis* and then expand the *Network & Extended Data* section.
+
 ![](cc4.png?width=500px)
-FortiEDR native integration with [FortiGuard Labs](https://www.fortinet.com/fortiguard/labs) allows up-to-date intelligence, supporting
-real-time incident classification to enable accurate incident response playbook activation.
+
+FortiEDR native integration with [FortiGuard Labs](https://www.fortinet.com/fortiguard/labs) allows up-to-date intelligence, supporting real-time incident classification to enable accurate incident response playbook activation.
 
 #### Playbooks
 
@@ -54,7 +62,8 @@ The FortiEDR Playbooks feature determines which automatic actions are triggered,
 
 1. Select *SECURITY SETTINGS > Playbooks*. The AUTOMATED INCIDENT RESPONSE – PLAYBOOKS page displays a row for each Playbook policy.
 2. Expand the **Default Playbook** policy row to show the actions it contains.
-![](AIR.png?width=500px)
+
+![](AIR.png?width=600px)
 
 Playbook policy actions are divided into the following types:
 - Notifications
@@ -65,10 +74,10 @@ Playbook policy actions are divided into the following types:
 Each of these categories contains different types of actions that can be performed when a security event is triggered.
 
 3. Note that *Remediation* actions can be one of the following types:
-- Terminate process
-- Delete file
-- Clean persistent data
-- Block address on Firewall
+  - Terminate process
+  - Delete file
+  - Clean persistent data
+  - Block address on Firewall
 
 4. Note that in our case the *Block address on Firewall* remediation is configured to block *Malicious* and *Suspicious* events on the firewall named *"HQ"*. This action ensures that connections to remote malicious addresses that are associated with the security event are blocked. A Firewall Connector must already be configured in order to perform this action.
 
@@ -80,20 +89,35 @@ Each of these categories contains different types of actions that can be perform
 
 Monitor for web traffic to/from known-bad or suspicious domains and analyze traffic flows that do not follow the expected protocol standards and traffic flows.
 
-### FortiEDR Detection :detective:
+### FortiAnalyzer Detection :detective:
 
-A common threat hunting practice for organizations is to search for communications with new, and well known, command and control addresses. With FortiEDR you can simply use a free text query to check communication to the malicous IP address we just reviewed.
+1. Login to FortiAnalyzer
+2. Go to the *Incidents & Events > Indicators* pane which consolidates all detected indicators for centralized analysis. This streamlines threat evaluation and enables SOC analysts to take swift action to mitigate risks.
 
-1. Click on *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/). 
-2. Perform a search for `1.123.37.68`
-3. Click on the entry to show details of this connection, notice the remote port.
-4. Click the *Investigation View* button to open a new window for further inspection.
-![](cc5.png?width=500px)
-5. Within this workbench view click on the *leaf* for the IP address which will provide information within the tray on the right of the screen. Click the *Insights* tab to show the options to investigate how many distinct processes, or devices, in an environment have communicated with this IP.
-![](cc6.png?width=500px)
+![faz_indicators](faz_indicators.png?width=600px)
+
+3. Double-click on the entry for IP 1.123.37.68 to view the indicator enrichment.
+
+![faz_enrich](faz_enrich.png?width=600px)
+
+4. Review the details in the *Enrich* pane. When indicators are enriched, FortiAnalyzer will display the following information:
+
+| Section | Description |
+|---------|-------------|
+| FortiGuard CTS | Displays the indicator confidence, IOC tags, IOC, antivirus, and web filter categories. |
+| VirusTotal Summary | Displays a Risk Summary, a Detection tab, and a Details tab. |
+| Risk Summary | Displays detailed security vendor analysis, presenting a comprehensive list indicating whether each vendor has detected the indicator, along with their assigned risk category if detected. |
+| Detection | Displays detailed security vendor analysis, presenting a comprehensive list indicating whether each vendor has detected the indicator, along with their assigned risk category if detected. |
+| Details | Displays the Whois Summary and Whois Lookup, providing essential information such as organization details, address, data source, and contact information. |
+
+The indicator enrichment feature empowers security analysts by providing them with comprehensive threat intelligence on identified IP addresses, domains, and URLs. This enriched context allows for a deeper understanding of security incidents, leading to more informed and effective response decisions.
 
 ### Going Further :rocket:
-- Review the FortiEDR/FortiGate integration by going to *Administration > Integrations* and checking the configuration of the firewall connector.
+- Review the FortiEDR/FortiGate integration by going to *Administration > [Connectors](https://xperts2025.fortiedr.com/#/admin/integrations)* and checking the configuration of the firewall connector.
 - Learn more about [C2](https://www.fortinet.com/resources/cyberglossary/command-and-control-attacks) attacks using Fortinet's cyber glossary.
+
+### Capture The Flag :checkered_flag:
+- Once *Windows_Update.exe* was executed it spawned another process named *cloud.exe*. This process began making a connection to an Australian IP address that served as Command & Control. What remote port at this IP address was being contacted?
+- 
 
 

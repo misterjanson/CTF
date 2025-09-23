@@ -41,15 +41,15 @@ This section of the lab will primarily have you utilizing the threat hunting cap
 
 {{% notice note %}} Whenever you see the :police_officer: or :detective: icons that is your cue to use Fortinet tools.{{% /notice %}}
 
-### Question & Answer :checkered_flag:
+### Capture The Flag :checkered_flag:
 
-Instructions on gathering flags and questions.
+Each lab will have instructions on gathering flags and answering questions.
 
 ## Objectives
 
 - Understand how to operationalize the MITRE ATT&CK framework
 - Understand how FortiEDR provides comprehensive prevention capabilities
-- Observe how FortiEDR natively maps to the MITRE ATT&CK framework
+- Observe how FortiEDR and FortiAnalyzer maps to the MITRE ATT&CK framework
 - Learn to use the FortiEDR Central Manager and FortiAnalyzer console to perform investigations
 
 ## Time to Complete

@@ -51,13 +51,49 @@ FortiEDR has the ability to block credential access attemps out-of-the-box.
 
 Monitor for unexpected processes interacting with LSASS.exe.
 
-### FortiEDR Detection :detective:
+### FortiAnalyzer Detection :detective:
 
-1. Go to *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
-2. Do a free text query for `lsass.exe`
-3. Review the various entries of processes that are observed interacting with the [Local Security Authority Subsystem Service](https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service)
-4. Make note of whether lsass.exe is the source process or the target process. How might you compare this difference in behavior to identify possible malicious behavior from normal behavior?
-![](lsass.png?width=500px)
+1. Login to [FortiAnalyzer](https://aws.graun.io/)
+2. Navigate to *Incidents & Events > Incidents > MITRE ATT&CK®*
+3. Under the column header for the **Credential Access** tactic find the tile for **OS Credential Dumping**. An icon and count displays on the tile. 
+
+![faz_cred_dump](faz_cred.png?width=600px)
+
+4. Mouse over the tile to display information in a tooltip.
+5. Click on the Event/Incident count to open a pane for this technique. You can toggle between table views for *Events* and *Incidents*.
+
+![faz_event_incident](faz_event_incident.png?width=600px)
+
+The table view for *Events* includes the following information:
+
+|  Column  | Description |
+|-------------------|--------------|
+| Event Handler | The event handler that generated the event(s). |
+| Severity | The severity of the event(s). |
+| Technique | The technique or sub-technique related to the event(s). |
+| Affected Endpoints | The number of affected devices. |
+| Event Count | The event count related to that event handler and technique or sub-technique. |
+
+The table view for *Incidents* includes the following information:
+
+|  Tab  | Description |
+|-------------------|--------------|
+| Severity | The severity of the incident(s). |
+| Description | The description for the incident. |
+| Technique | The technique or sub-technique related to the incident(s). |
+| Affected Endpoints | The number of affected endpoints. |
+| Incidents | The incident count related to that technique or sub-technique. |
+
+6. Click the incident count to open the *Incidents & Events > Incidents > Incidents* pane in a new tab. 
+
+![faz_incident_count](faz_incident_count.png?width=600px)
+
+7. Review the filtered incidents of the selected technique.
+
+![faz_incident](faz_incident.png?width=600px)
 
 ### Going Further :rocket:
 - The FortiEDR Threat Hunting free-text query is based on Lucene syntax. The FortiEDR Administration Guide contains an [Appendix](https://docs.fortinet.com/document/fortiedr/6.2.0/administration-guide/142063/appendix-b-lucene-syntax) with detailed information about using lucense syntax in FortiEDR.
+
+### Capture The Flag :checkered_flag:
+Passwords are typically stored as hashes. One common method to discover these passwords is to “crack” them. Depending on the complexity of the hash this can be difficult and time consuming, however there are online tools that can attempt to crack passwords and can often easily discover common passwords from hashes. See if you can crack the password of this MD5 hash: **482c811da5d5b4bc6d497ffa98491e38** What is the clear-text password?

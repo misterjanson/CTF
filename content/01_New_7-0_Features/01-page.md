@@ -1,6 +1,6 @@
 ---
-title: FortiEDR 7.0 Details
-menuTitle: FortiEDR 7.0 Details
+title: What's New in FortiEDR
+menuTitle: What's New in FortiEDR
 weight: 5
 ---
 FortiEDR 7.0 offers multiple new features that will move the product line further ahead in terms of capabilities and security coverage. 
@@ -17,47 +17,43 @@ Here is a view of the new 7.0 dashboard:
 
 ![](new_dashboard.png?width=500px)
 
-## Investigation View, Audit History, & Analyst Workflow :man_technologist:
+## Changes to the Workflow of Events :man_technologist:
 
-The new *Investigation View* provides a wealth of insight including an *Event Analysis* pane that provides an extensive amount of information:
+The *Event Viewer* tab is renamed *Incidents* with usability improvements, such as tabbed view of different types of incidents. Clicking on an incident displays the Handle Incident button and an embedded preview of the investigation view within the console where you can perform operations without opening a separate tab.
 
-![](event_analysis.png?width=500px)
+![new_incidents](../04_CTF/new_incidents.png?width=600px)
 
-The *Overview* pane provides the history of an event as well as a means for analysts to note and track work being done for each event:
+Clicking the *Investigate* button opens the full investigation view within the console with an *Overview* tab that shows the audit history and policy violation information. 
 
-![](event_activity.png?width=500px)
+![new_overview](../04_CTF/new_overview.png?width=600px)
 
+The *Event Analysis* tab that shows the full investigation view. You can also switch to full screen or open the investigation view in a new tab using the buttons at the top-right corner.
 
-## Disk Encryption :floppy_disk:
+![new_analysis](../04_CTF/new_analysis.png?width=600px)
 
-FortiEDR 7.0 allows enforcement of native OS tools such as disk encryption.
+## Protection for Mobile Devices :iphone:
 
-{{% notice info %}}Many EPP tools will implement their own mechanisms such as disk encryption which ultimately lead to bloat on an endpoint. FortiEDR will simply leverage tools already part of the endpoint's operating system, allowing security teams to leverage tools already at their disposal.{{% /notice %}}
+FortiEDR 7.0 adds protection for mobile devices (Android and iOS) with the following security features:
+- (Android only) Real time and scheduled periodic scanning for potential vulnerabilities, such as malicious files or applications, rooted devices, outdated OS versions and kernel, lack of security update, or non-compliant configurations.
+- (Android only) Application behavior and network traffic monitoring to detect mobile malware and data exfiltration. FortiEDR prevents the execution or installation of malicious files or applications based on the policy or application verdict.
+- Automatic detection of malicious domains and IP addresses with built-in threat intelligence integration
 
-A new policy category can be accessed under *Security Settings > Disk Encryption*.
+## FortiRecon Integration :telescope:
 
-![](diskenc-01.png)
+FortiEDR 7.0 adds integration with [FortiRecon](https://www.fortinet.com/products/fortirecon) for comprehensive visibility into the organization's external attack surface so that analysts can prioritize security alerts and incidents based on risk factors such as severity of vulnerabilities, relevance of threat intelligence feeds, and severity of affected endpoints, ensuring that efforts are focused on addressing the most significant risks to the organization.
 
-Policies for disk encryption are based on the OS type and version. In the following case the **Xperts-Disk-Enc** policy is assigned to the **Demo - Installers** group  which allows the policy to be applied granularly.
+The *Communication Control > Applications* page replaces the Vulnerability column with the following two Severity columns with severity ratings for each application and version:
+- **NIST Severity** — Rating provided by FortiEDR’s vulnerability scoring system leveraging the NIST Cybersecurity Framework.
+- **ACI Severity** — Adversary Centric Intelligence (ACI) rating provided by FortiRecon leveraging FortiGuard Threat Analysts to provide comprehensive coverage of dark web, open source, and technical threat intelligence, including threat actor insights. This information enables administrators to proactively assess risks, respond faster to incidents, better understand their attackers, and protect assets.
 
-![](diskenc-02.png?width=300px)
+## Security Compliance :memo:
 
-Policies can now also be viewed by navigating to *Inventory > Collectors*. Here we can see the Policy name, State, Method (Operating System), Attribute, and applied Collector Group. Click the ellipsis for the *Method* provides details of the policy.
+The *Inventory > Collectors* page includes the new DISK ENCRYPTION  and DEVICE SECURITY columns which provides insights into the security status of Windows and macOS endpoints.
 
-![](diskenc-03.png?width=500px)
+The device is marked as compliant if two or more of the following criteria are met:
 
-## Host Firewall Configuration :man_firefighter: 
-
-Enhancements within *Communication Control* provide FortiEDR 7.0 to manage the native host based firewall built into the OS. These settings are located under *Communication Control > Host Firewall*:
-
-![](hostfw-01.png)
-
-Firewall rules can be applied to collector groups and support for OSX exists as well:
-
-![](hostfw-02.png?width=500px)
-
-## Device Compliance :memo:
-
-The new layout found under *Inventory > Collectors* allows for information on both **Disk Encryption** and **Device Security**. By mousing over the compliance status a tool tip appears that shows which native security mechanisms are enabled/disabled on the endpoint.
-
-![](device-compliance-01.png?width=500px)
+| Windows                    | MacOS |
+|--------------------------|---------------|
+| Windows Updates | Gatekeeper Status |
+| Security Center | System Integrity Protection (SIP) Status |
+| User Account Control (UAC) | |

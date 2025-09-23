@@ -11,7 +11,7 @@ If you know neither the enemy nor yourself, you will succumb in every battle.
 
 It has been our experience that the above quote from [Sun Tzu's The Art of War](https://en.wikipedia.org/wiki/The_Art_of_War) is true. Many security practitioners neither understand themselves, or much less the enemy. Organizations with this total lack of understanding inevitably find themselves in the headlines due to the latest attack or breach.
 
-It is our hope that this workshop has enabled you to know yourself (in the form of a defensive tool like FortiEDR) and also to [know your enemy](https://www.youtube.com/watch?v=R2K2hSB4fEU) (through examples and reference sources like MITRE ATT&CK). With this increased understanding you will be better equipped to defend your network, and your customer's networks. 
+It is our hope that this workshop has enabled you to know yourself (in the form of a tools like FortiEDR and FortiAnalzyer) and also to [know your enemy](https://www.youtube.com/watch?v=R2K2hSB4fEU) (through examples and reference sources like MITRE ATT&CK). With this increased understanding you will be better equipped to defend your own networks, and your customer's networks. 
 
 ### Break the Attack Sequence
 

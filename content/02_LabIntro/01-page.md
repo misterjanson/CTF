@@ -6,7 +6,7 @@ weight: 10
 
 The goal of this workshop is not to just learn how to use a specific tool, or tools, but to also leverage a common framework used in the InfoSec industry. With that in mind the [MITRE ATT&CK®](https://attack.mitre.org/) framework will serve as a foundational reference tool through the lab exercises. This page provides key information on MITRE ATT&CK® and you'll also use the publicly available MITRE ATT&CK® knowledge base to find information.
 
-We strongly believe that a basic understanding of this framework will make you a better security practitioner. Additionally, you will find MITRE ATT&CK® referenced in may Fortinet products.
+We strongly believe that a basic understanding of this framework will make you a better security practitioner. Additionally, you will find MITRE ATT&CK® referenced in many Fortinet products.
 
 ## Overview
 
@@ -63,4 +63,4 @@ Subsequently each **tactic** is comprised of numerous **techniques** (and sub-te
 |-------|-------|-------------|
 |T1595	|Active Scanning	|Adversaries may execute active reconnaissance scans to gather information that can be used during targeting. Active scans are those where the adversary probes victim infrastructure via network traffic, as opposed to other forms of reconnaissance that do not involve direct interaction.|
 
-The exercises in the labs will reference the ATT&CK® Matrix as we focus on some specific tactics and techniques and understand how FortiEDR incorporates the ATT&CK® Matrix natively.
+The exercises in the labs will reference the ATT&CK® Matrix as we focus on some specific tactics and techniques and understand how Fortinet incorporates the ATT&CK® Matrix natively.

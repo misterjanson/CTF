@@ -30,12 +30,22 @@ Consider implementing IT disaster recovery plans that contain procedures for tak
 
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Review the entry for VSSVC.exe.
-![](vss1.png?width=500px)
+   
+![](vss1.png?width=600px)
+
 3. Based on this information login to FortiAnalyzer.
 4. Navigate to *Incidents & Events > Incidents > MITRE ATT&CK Coverage*.
 5. Under the *Impact* tactic column click the *Event Handler* icon for *Inhibit System Recovery*.
+
 ![faz_inhibit](faz_inhibit.png?width=600px)
-6. Review the event handlers to identify which techniques are included in each event handler.
+
+6. Note that there are two *Outbreak Alert* Event Handlers associated with notorious ransomware campaigns.
+
+![faz_black_basta](faz_black_basta.png?width=600px)
+
+7. Click on the event handler for Black Basta Ransomware to view the list of 28 techniques used for detecting this ransomware. Note that this includes [T1490 Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/).
+
+![faz_t1490](faz_t1490.png?width=600px)
 
 ### Detection :mag:
 
@@ -76,10 +86,19 @@ We’ll use our knowledge of use the common practice of shadow copy deletion to 
 6. To display a Saved Query, on the *Filters* area, at the far right of the page, click the eclipsis icon and select *Saved* Queries.  The following displays listing all the queries that were saved using the Save Query option.
 ![](savequery4.png?width=500px)
 
-{{% notice note %}}Scheduled query options are as follows{{% /notice %}}
+Scheduled query options are as follows:
 
 | Field                    | Definition |
 |--------------------------|---------------|
 | Classification           | Select the classification of the Security Event to be issued when the scheduled query has run and found matches. The Classification specifies how malicious the security event is, if at all. Classifications are shown in the Event Viewer, as previously discussed. They can be: *Malicious* *Suspicious* *Inconclusive* *Likely Safe* *PUP (Potentially Unwanted Program)* *Safe* |
 | Repeat Every/On          | These options enable you to define the frequency and schedule when this query will be run.   |
 | Trigger Playbook Actions | Specifies whether to allow FortiEDR to trigger the corresponding Playbook action of the triggered security event from the scheduled query. Enabling this checkbox allows FortiEDR to automatically apply the action of the Playbook that is assigned to the Collector Group the triggering device belongs to.   |
+
+### Going Further :rocket:
+- MITRE ATT&CK also documents detailed information on the use of software in behavioral modeling. Review the page for [Black Basta](https://attack.mitre.org/software/S1070/) to view the numerous techniques used.
+- The FortiAnalyzer [Outbreak Detection Service](https://www.fortiguard.com/services/outbreak-detection-service) is a licensed feature that allows FortiAnalyzer administrators to view outbreak alerts and automatically download related event handlers and reports from FortiGuard. Review the Outbreak Alert for [Black Basta Ransomware](https://www.fortiguard.com/outbreak-alert/black-basta-ransomware) to find detailed information and resources associated with ransomware that targets critical infrastruce and healthcare.
+
+### Capture The Flag :checkered_flag:
+FortiAnalyzer includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
+- What is the Fortinet Signature ID for Black Basta Ransomware?
+- What is the Fortinet virus signature name for Akira Ransomware?
