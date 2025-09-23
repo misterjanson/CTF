@@ -8,7 +8,7 @@ With the appropriate license, you can leverage these matrices in the FortiAnalyz
 - Incidents & Events > Incidents > MITRE ATT&CK®
 - Incidents & Events > Incidents > MITRE ATT&CK® ICS
 
-FortiAnalyzer associates incident and event information with the relevant tactics and techniques. FortiAnalyzer also displays coverage in the MITRE ATT&CK matrices, so you can determine which event handlers help to cover specific tactics and techniques.
+FortiAnalyzer associates incident and event information with the relevant tactics and techniques. FortiAnalyzer also displays coverage in the MITRE ATT&CK matrices, so you can determine which [event handlers](https://docs.fortinet.com/document/fortianalyzer/7.6.4/administration-guide/444315/event-handlers) help to cover specific tactics and techniques.
 
 {{% notice note %}}The examples displayed below are for the MITRE ATT&CK® pane, but the same functionality exists for the MITRE ATT&CK® ICS pane.
 

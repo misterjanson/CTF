@@ -104,3 +104,8 @@ Facets provide an easy-to-use mechanism to aggregate the results in the Activity
 
 ### Going Further :rocket:
 - The [FortiGuard Managed Detection and Response (MDR)](https://www.fortinet.com/solutions/enterprise-midsize-business/mdr) Service is designed for customers of the FortiEDR advanced endpoint security platform. This team of threat experts monitors, reviews and analyzes every alert, proactively hunts threats, and takes actions on behalf of customers to ensure they are protected according to their risk profile.
+
+### Capture The Flag :checkered_flag:
+Using the Facets and Results table identify the file created by LockBit that has information on how to decrypt the data.
+- What is the name of this file?
+- Find how to retrieve this file within the Threat Hunting module. Once retrieved, what is the URL of the first TOR site listed to contact the ransomware operator?
