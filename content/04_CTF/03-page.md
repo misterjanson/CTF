@@ -76,5 +76,8 @@ Each FortiEDR threat hunting activity event may be a part of a behavior and/or a
 ### Capture The Flag :checkered_flag:
 
 Review the Event Monitor in FortiAnalyzer to find the following:
-1. What is the common MITRE Tactic name found on both The-Flame and JPalm-DC?
-2. What MITRE Tech ID is assigned for this tactic?
+
+| # | Question/Flag | Points |
+|---|---------------|--------|
+| 1 | What is the common MITRE Tactic name found on both The-Flame and JPalm-DC? | 3 |
+| 2 | What MITRE Tech ID is assigned for this tactic? | 3 |

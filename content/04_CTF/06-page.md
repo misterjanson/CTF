@@ -101,4 +101,7 @@ The table view for *Incidents* includes the following information:
 
 ### Capture The Flag :checkered_flag:
 Passwords are typically stored as hashes. One common method to discover these passwords is to “crack” them. Depending on the complexity of the hash this can be difficult and time consuming, however there are online tools that can attempt to crack passwords and can often easily discover common passwords from hashes. See if you can crack the password of this MD5 hash: **482c811da5d5b4bc6d497ffa98491e38** 
-1. What is the clear-text password?
+
+| # | Question/Flag | Points |
+|---|---------------|--------|
+| 1 | What is the clear-text password?  | 10 |
