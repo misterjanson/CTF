@@ -4,7 +4,7 @@ menuTitle: Impact Lab
 weight: 45
 ---
 
-When an attack is finally discovered by most organizations it is because attackers have significantly impacted business operations, such as [encrypting data](https://attack.mitre.org/techniques/T1486/). In this lab we'll take a look at a common impact technique. 
+When an attack is finally discovered by most organizations it is because attackers have significantly impacted business operations, such as [encrypting data](https://attack.mitre.org/techniques/T1486/). In this lab we'll take a look at a common impact technique and how threat actors commonly use specific procedures.
 
 ### Tactic :gear:
 
@@ -84,6 +84,7 @@ We’ll use our knowledge of use the common practice of shadow copy deletion to 
 5. Click **Save** to save this query so that it is available to be redisplayed, as described below. The system runs the query immediately to verify that it is functional.
 
 6. To display a Saved Query, on the *Filters* area, at the far right of the page, click the eclipsis icon and select *Saved* Queries.  The following displays listing all the queries that were saved using the Save Query option.
+
 ![](savequery4.png?width=500px)
 
 Scheduled query options are as follows:
@@ -100,5 +101,5 @@ Scheduled query options are as follows:
 
 ### Capture The Flag :checkered_flag:
 FortiAnalyzer includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
-- What is the Fortinet Signature ID for Black Basta Ransomware?
-- What is the Fortinet virus signature name for Akira Ransomware?
+1. What is the Fortinet Signature ID for Black Basta Ransomware?
+2. What is the Fortinet virus signature name for Akira Ransomware?

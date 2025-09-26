@@ -10,27 +10,34 @@ The instructor will perform a live attack demonstration using the following netw
 
 ![](attack-topology.png?width=600px)
 
-Students will have access to the FortiEDR Console (Central Manager) and FortiAnalyzer to perform review and investigation.
+You will have access to FortiEDR, FortiAnalzyer, and the CTF platform using the information below:
 
 ## Authentication Information
 
-Credentials to the FortiEDR Central Manager is the same for all users.
+Credentials to the **FortiEDR** Central Manager is the same for all users.
 | Access | Details |
 |-----|--------------------------------------|
-| URL | https://xperts2025.fortiedr.com/ |
+| URL | [FortiEDR Login](https://xperts2025.fortiedr.com/) |
 | user | `xperts25` |
 | password | `xPerts_54321$` |
 
-Credentials to the FortiAnalyzer is the same for all users.
+Credentials to the **FortiAnalyzer** is the same for all users.
 | Access | Details |
 |-----|--------------------------------------|
-| URL | https://98.82.30.66/ |
+| URL | [FortiAnalyzer Login](https://98.82.30.66/) |
 | user | `xperts25` |
 | password | `xPerts_54321$` |
+
+**Capture The Flag**
+| Access | Details |
+|-----|--------------------------------------|
+| URL | [CTF Login](http://3.19.227.225:8000/) |
+| Registration Code | Xperts2025 |
+| Click [register](http://3.19.227.225:8000/register) link | Create your username and password |
 
 ## Going Further :rocket:
 
-At the end of various sections of this workshop will be items to help further your understanding of the concepts covered therein. It is recommended that you use these prompts as time permits. Although these items are not central to completing this workshop it is recommended you consider them as a means of increasing your security knowledge.
+At the end of various sections of this workshop will be items to help further your understanding of the concepts covered therein. It is recommended that you use these prompts as time permits. Although these items are not central to completing this workshop it is recommended you consider them as a means of increasing your security knowledge. Additionally, you will find bonus CTF questions based on this information somewhere in this workshop.
 
 ##
 ----

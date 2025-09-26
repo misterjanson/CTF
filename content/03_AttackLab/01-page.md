@@ -42,5 +42,5 @@ Now we'll use [Metasploit](https://www.metasploit.com/) to create a *handler* th
 8. This is an example of what the expected commands and output will look like:
 ![msfconsole](02_msfconsole.png?width=700px)
 
-### Going Further :detective:
+### Going Further :rocket:
 - To see all the fun stuff that Meterpreter can do use the `help` command

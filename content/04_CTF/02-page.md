@@ -55,9 +55,11 @@ The following information is defined per security policy:
 
 1. Click on the Execution Prevention policy to expand the policy to show the associated rules that comprise the policy.
 2. Click on the first rule of the policy *Malicious File Detected*. Note that by default this rule is set to **block** and is **enabled**.
+
 ![execution_prevention](execution_prevention_policy.png?width=500px)
-1. Click on *ADVANCED POLICY & RULES DATA* at the bottom of the window to display information about this rule.
-2. Notice the *RULE DETAILS*:
+
+3. Click on *ADVANCED POLICY & RULES DATA* at the bottom of the window to display information about this rule.
+4. Notice the *RULE DETAILS*:
 > The file was identified as malicious by our machine-learning engine or by other means, based on analysis of the file.
 
 This rule provides a proven first layer of defense via a custom-built, kernel-level next-generation
@@ -66,22 +68,23 @@ attacks like ransomware in real time.
 
 In this case the *Malicous File Detected* rule will satisfy the recommendation by MITRE to **mitigate** execution on a system. Let's review this rule in action for the *Windows_Update.exe* file that was downloaded during the attack scenario.
 
-1. Click on [Incidents](https://xperts2025.fortiedr.com/#/incidents) in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) and click on the line for *Windows_Update.exe* to expand a list of events. Incidents are shown descending by default (from newest to oldest).
+5. Click on [Incidents](https://xperts2025.fortiedr.com/#/incidents) in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) and click on the line for *Windows_Update.exe* to expand a list of events. Incidents are shown descending by default (from newest to oldest).
 
 ![windows_update_event](windows_update_event.png?width=500px)
 
-2. Select the earliest event in the timeline. In addition to textual information that is displayed, the Event Graph tab provides an image depicting the process chain, such as connection establishment and data alteration, up to the action that was blocked.
+6. Select the earliest event in the timeline. In addition to textual information that is displayed, the Event Graph tab provides an image depicting the process chain, such as connection establishment and data alteration, up to the action that was blocked.
 
-![](event_graph.png?width=500px)
+![event_graph](event_graph.png?width=500px)
 
 The picture is shown as a timeline from left to right (meaning that the left process happened before the others). Activity event types or actions are represented by a curved line with an arrow, called an "edge". An edge can be one activity event/action or an aggregation of several. The numbered arrows indicate the sequence of actions and specify the action that was performed, such as Process Creation, Socket Close, Block and so on. Edges may also have icons below them indicating classification or violation of certain rules and MITRE & Behavior models. Click on an icon for more detailed information.
 
-4. Click on the red explanation icon to display the FortiEDR rule that was triggered for this incident.
+7. Click on the red explanation icon to display the FortiEDR rule that was triggered for this incident.
+
 ![](mal_file.png?width=500px)
 
 Note that the *Malicious File Detected* rule was triggered for *Windows_Update.exe*. 
 
-5. Click the blue *Investigate* button for this incident to open the *Investigation View* windows.
+8. Click the blue *Investigate* button for this incident to open the *Investigation View* windows.
 
 ![incident_icon](incident_icon.PNG)
 
@@ -127,24 +130,34 @@ FortiEDR categorizes the various actions into the following categories:
 We'll use this information to quickly take a look at the initial creation of the Lockbit.exe ransomware file:
 
 2. In the Filters dialog box simple type `Lockbit.exe` and press enter. This will display numerous entries in the Activities Event Table. Let's narrow that down.
+
 ![01_TH](01_threat_hunt.png?width=500px)
+
 3. Click the **File** actions header to show only file activities of Lockbit.exe.
 4. Click on the **TIME** column header to sort the events ascending, so that we can view the oldest events first.
+
 ![02_TH](02_threat_hunting.png?width=500px)
+
 5. Locate an entry with the type of *"File Create"*.
 6. Click anywhere in this row of the Activity Events table to display more details about the specific activity event in a Details pane on the right. The Details pane for an activity event contains a Summary tab, one or two other tabs, and the Investigation View button. The selected row is marked by a green border on its left.
+
 ![](file_create.png?width=500px)
+
 The Details pane for an activity event contains a Summary tab, one or two other tabs, and the Investigation View button, as follows:
+
 ![04_TH](04_threat_hunt.png?width=500px)
-    - **Summary Tab**: This tab specifies a summary of the activity event. At the top of the tab, it shows details about the endpoint, including the endpoint and its IP, path, operating system, and so on. The area below the endpoint section shows the source process and its detail. The area below the source graphically shows the action again, which is the activity event type, as well as some additional data regarding the action, if any. The area at the bottom of the pane shows the target and its details. You can click the Expand or Collapse arrows in an area of this pane to show or hide additional relevant details, respectively.
-    - **Process Tab**: This tab shows additional details about the source process.
+
+- **Summary Tab**: This tab specifies a summary of the activity event. At the top of the tab, it shows details about the endpoint, including the endpoint and its IP, path, operating system, and so on. The area below the endpoint section shows the source process and its detail. The area below the source graphically shows the action again, which is the activity event type, as well as some additional data regarding the action, if any. The area at the bottom of the pane shows the target and its details. You can click the Expand or Collapse arrows in an area of this pane to show or hide additional relevant details, respectively.
+- **Process Tab**: This tab shows additional details about the source process.
+  
     ![05_TH](05_threat_hunt.PNG?width=500px)
-    - **Target Tab**: This tab only displays if the target is of type Process or File, and details additional data regarding such.
-    - **Investigation View Button**: This button opens a graphical Investigation View of the activity events details: source, action and target. The graphical view provides the ability to add more activity events to the graph and show the relationship and timeline of the occurrence of those activities for better understanding of the flow of activity events.
+
+- **Target Tab**: This tab only displays if the target is of type Process or File, and details additional data regarding such.
+- **Investigation View Button**: This button opens a graphical Investigation View of the activity events details: source, action and target. The graphical view provides the ability to add more activity events to the graph and show the relationship and timeline of the occurrence of those activities for better understanding of the flow of activity events.
+
 8. Take time to explore the information presented in the *Details Pane*.
 
 {{% notice warning %}}Get in the habit of using the **Clear All** option in the Filters area of the Threat Hunting Module. Click the elipsis and choose *Clear All* prior to running a new query. In some cases it may also be necessary to increase the time range of a query by using the **Time** drop down and selecting the appropriate range.{{% /notice %}}
-
 
 ### Going Further :rocket:
 
@@ -153,6 +166,6 @@ MITRE ATT&CK also provides information on threat [groups](https://attack.mitre.o
 ### Capture The Flag :checkered_flag:
 
 Use the FortiEDR Threat Hunting module to find the following:
-- What is the name of the server that LockBit.exe was uploaded to?
-- What is the SHA-256 hash of the uploaded LockBit.exe?
-- Find how to directly send this hash from FortiEDR to [VirusTotal](https://www.virustotal.com/). VirusTotal is a free online service that analyzes suspicious files, URLs, domains, and IP addresses for viruses, malware, and other cyber threats. VirusTotal also aggregates results from over 70 different antivirus engines, including those used by Fortinet.  What is the signature name that Fortinet has assigned to this file?
+1. What is the name of the server that LockBit.exe was uploaded to?
+2. What is the SHA-256 hash of the uploaded LockBit.exe?
+3. Find how to directly send this hash from FortiEDR to [VirusTotal](https://www.virustotal.com/). VirusTotal is a free online service that analyzes suspicious files, URLs, domains, and IP addresses for viruses, malware, and other cyber threats. VirusTotal also aggregates results from over 70 different antivirus engines, including those used by Fortinet.  What is the signature name that Fortinet has assigned to this file?

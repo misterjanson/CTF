@@ -29,7 +29,7 @@ Mitigations represent security concepts and classes of technologies that can be 
 
 ### FortiEDR Prevention :police_officer:
 
-This section of each lab is where you'll start getting hands on and learning the various methods FortiEDR uses to implement prevention mechanisms. This is effectively where we start putting the recommendations from MITRE into action.
+This section of each lab is where you'll start getting hands on and learn the various methods FortiEDR uses to implement prevention mechanisms. This is effectively where we start putting the recommendations from MITRE into action.
 
 ### Detection :mag:
 
@@ -37,13 +37,13 @@ Many behaviors observed through various tactics and techniques may not always be
 
 ### Fortinet Detection :detective:
 
-This section of the lab will primarily have you utilizing the threat hunting capabilites of FortiEDR and FortiAnalyzer to learn how to analyze telemetry collected by FortiEDR.
+This section of the lab will primarily have you utilizing the capabilites of FortiEDR and FortiAnalyzer to learn how to analyze telemetry collected from FortiEDR.
 
 {{% notice note %}} Whenever you see the :police_officer: or :detective: icons that is your cue to use Fortinet tools.{{% /notice %}}
 
 ### Capture The Flag :checkered_flag:
 
-Each lab will have instructions on gathering flags and answering questions.
+Each lab will have instructions on gathering flags and answering questions. Some questions are more difficult than others and have a higher point value. In some cases a hint can be used, but be careful, using a hint will cost you points.
 
 ## Objectives
 
@@ -54,4 +54,4 @@ Each lab will have instructions on gathering flags and answering questions.
 
 ## Time to Complete
 
-Estimated: 120 Minutes
+Estimated: 180 Minutes

@@ -22,3 +22,10 @@ With a better understanding of an attacker's sequence you can now identify gaps 
 ### Feedback
 
 You should have received a survey asking for feedback on this workshop. We highly value your honest feedback and would greatly appreciate it if you could take a few minutes to complete the survey.
+
+### Capture The Flag - Bonus :checkered_flag:
+
+1.	The "Pool Party" technique allows injecting processes using which thread pool?
+2.	FortiMDR has published a case study for which major energy drink brand?
+3.	Fortinet lists the most vulnerable devices for C2 attacks in their cyber glossary. What is the third most targeted device type?
+4.	What is Fortinet’s Threat Radar overall score for Black Basta ransomware?

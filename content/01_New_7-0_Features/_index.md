@@ -9,12 +9,9 @@ FortiEDR 7.0 and FortiAnalyzer 7.6.4 delivers a host of new features that will b
 
 ## Featured Items:
 
-- Customizable dashboards.
-- Modern Investigation View for visualizing attacks.
-- Analyst incident hanndling workflows.
-- Event aggregation focused on incidents.
-- Device security complaince enforcement.
+- What's New in FortiEDR
+- Security Operation in FortiAnalyzer
 
 ## Time to Complete
 
-Estimated: 35-45 Minutes
+Estimated: 30 Minutes
