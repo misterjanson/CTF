@@ -8,4 +8,4 @@ The documentation presented here can be used as a reference to configure Kali Li
 
 ![base](all_your_base.png?width=500px)
 
-{{% notice info %}} You will **NOT** be performing this configuration during this session. The instructor will already have configured this in order to perform the [live attack](https://soundcloud.com/buddyboy600alt/all-your-base-are-belong-to-us). This information is made available so that you may perform your own testing in the future. {{% /notice %}}
+{{% notice info %}} You will **NOT** be performing this configuration during this session. The instructor will already have configured this in order to perform the [live attack](https://www.youtube.com/watch?v=qItugh-fFgg). This information is made available so that you may perform your own testing in the future. {{% /notice %}}

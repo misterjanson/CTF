@@ -107,5 +107,5 @@ Facets provide an easy-to-use mechanism to aggregate the results in the Activity
 
 ### Capture The Flag :checkered_flag:
 Using the Facets and Results table identify the file created by LockBit that has information on how to decrypt the data.
-- What is the name of this file?
-- Find how to retrieve this file within the Threat Hunting module. Once retrieved, what is the URL of the first TOR site listed to contact the ransomware operator?
+1. What is the name of this file?
+2. Find how to retrieve this file within the Threat Hunting module. Once retrieved, what is the URL of the first TOR site listed to contact the ransomware operator?

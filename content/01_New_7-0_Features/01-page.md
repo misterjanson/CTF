@@ -21,15 +21,15 @@ Here is a view of the new 7.0 dashboard:
 
 The *Event Viewer* tab is renamed *Incidents* with usability improvements, such as tabbed view of different types of incidents. Clicking on an incident displays the Handle Incident button and an embedded preview of the investigation view within the console where you can perform operations without opening a separate tab.
 
-![new_incidents](../04_CTF/new_incidents.png?width=600px)
+![new_incidents](new_incidents.png?width=600px)
 
 Clicking the *Investigate* button opens the full investigation view within the console with an *Overview* tab that shows the audit history and policy violation information. 
 
-![new_overview](../04_CTF/new_overview.png?width=600px)
+![new_overview](new_overview.png?width=600px)
 
 The *Event Analysis* tab that shows the full investigation view. You can also switch to full screen or open the investigation view in a new tab using the buttons at the top-right corner.
 
-![new_analysis](../04_CTF/new_analysis.png?width=600px)
+![new_analysis](new_analysis.png?width=600px)
 
 ## Protection for Mobile Devices :iphone:
 

@@ -4,7 +4,7 @@ menuTitle: Credential Access Lab
 weight: 30
 ---
 
-This lab will focus on understanding common techniques, and sub-techniques, used by attackers to access credentials on victim machines. 
+This lab will focus on understanding common techniques, and sub-techniques, used by attackers to access credentials on victim machines. We'll then see how some of these specific tactics can be viewed in FortiAnalyzer.
 
 ### Tactic :gear:
 
@@ -38,9 +38,13 @@ FortiEDR has the ability to block credential access attemps out-of-the-box.
 
 1. Click *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
 2. Review the incident for *winlogon.exe* on the device *The-Flame* that shows the injected process attempt to connect to credentials.
+
 ![](creds1.png?width=500px)
+
 3. Go to *Security Settings > Security Events > [Security Policies](https://xperts2025.fortiedr.com/#/security_settings/security_events/security-policies)*. Expand the *Exfiltration Prevention* policy and review the first rule *Access to Critical System Information*. 
+
 ![](vss2.png?width=500px)
+
 4. The *ADVANCED POLICY & RULE DATA* section at the bottom of the windows provide details on specific rules:
 > Rule Details
 >> A process attempted to access credentials, passwords or other critical information in a suspicious manner. This rule may have been triggered by a malicious process or by a user attempting to get higher credentials for lateral movement or to elevate privileges.
@@ -96,4 +100,5 @@ The table view for *Incidents* includes the following information:
 - The FortiEDR Threat Hunting free-text query is based on Lucene syntax. The FortiEDR Administration Guide contains an [Appendix](https://docs.fortinet.com/document/fortiedr/6.2.0/administration-guide/142063/appendix-b-lucene-syntax) with detailed information about using lucense syntax in FortiEDR.
 
 ### Capture The Flag :checkered_flag:
-Passwords are typically stored as hashes. One common method to discover these passwords is to “crack” them. Depending on the complexity of the hash this can be difficult and time consuming, however there are online tools that can attempt to crack passwords and can often easily discover common passwords from hashes. See if you can crack the password of this MD5 hash: **482c811da5d5b4bc6d497ffa98491e38** What is the clear-text password?
+Passwords are typically stored as hashes. One common method to discover these passwords is to “crack” them. Depending on the complexity of the hash this can be difficult and time consuming, however there are online tools that can attempt to crack passwords and can often easily discover common passwords from hashes. See if you can crack the password of this MD5 hash: **482c811da5d5b4bc6d497ffa98491e38** 
+1. What is the clear-text password?

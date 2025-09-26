@@ -9,7 +9,7 @@ FortiAnalyzer 7.6.4 includes new Security Operations (SOC) features that increas
 
 A SOC Dashboard has been added in FortiAnalyzer 7.6.0. To view this dashboard, go to *Dashboards > SOC Dashboard*.
 
-![faz_soc_dashboard](../04_CTF/faz_soc_dashboard.png?width=600px)
+![faz_soc_dash](faz_soc_dashboard.png?width=600px)
 
 The following widgets are available in the *SOC Dashboard*:
 
@@ -31,4 +31,4 @@ The XDR dashboard is added to provide a real-time view of all alerts and inciden
 
 To open the dashboard, go to *Dashboards > XDR Dashboard*.
 
-![faz_xdr](../04_CTF/faz_xdr.png?width=600px)
+![faz_xdr](faz_xdr.png?width=600px)
