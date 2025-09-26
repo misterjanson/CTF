@@ -165,7 +165,8 @@ MITRE ATT&CK also provides information on threat [groups](https://attack.mitre.o
 
 ### Capture The Flag :checkered_flag:
 
-Use the FortiEDR Threat Hunting module to find the following:
-1. What is the name of the server that LockBit.exe was uploaded to?
-2. What is the SHA-256 hash of the uploaded LockBit.exe?
-3. Find how to directly send this hash from FortiEDR to [VirusTotal](https://www.virustotal.com/). VirusTotal is a free online service that analyzes suspicious files, URLs, domains, and IP addresses for viruses, malware, and other cyber threats. VirusTotal also aggregates results from over 70 different antivirus engines, including those used by Fortinet.  What is the signature name that Fortinet has assigned to this file?
+| # | Question/Flag | Points |
+|---|---------------|--------|
+| 1 | What is the name of the server that LockBit.exe was uploaded to? | 1 |
+| 2 | What is the SHA-256 hash of the uploaded LockBit.exe? | 3 |
+| 3 | Find how to directly send this hash from FortiEDR to [VirusTotal](https://www.virustotal.com/). VirusTotal is a free online service that analyzes suspicious files, URLs, domains, and IP addresses for viruses, malware, and other cyber threats. VirusTotal also aggregates results from over 70 different antivirus engines, including those used by Fortinet.  What is the signature name that Fortinet has assigned to this file? | 5 |

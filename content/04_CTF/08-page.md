@@ -118,7 +118,10 @@ Playbooks improve response times and reduce manual workload. In this case the *I
 - Learn more about [C2](https://www.fortinet.com/resources/cyberglossary/command-and-control-attacks) attacks using Fortinet's cyber glossary.
 
 ### Capture The Flag :checkered_flag:
-1. Once *Windows_Update.exe* was executed it spawned another process named *cloud.exe*. This process began making a connection to an Australian IP address that served as Command & Control. What remote port at this IP address was being contacted?
-2. The FAZ connector for VirusTotal support multipe actions. These actions use specific parameters. What is the full parameter for the *Query IP* action?
+
+| # | Question/Flag | Points |
+|---|---------------|--------|
+| 1 | Once *Windows_Update.exe* was executed it spawned another process named *cloud.exe*. This process began making a connection to an Australian IP address that served as Command & Control. What remote port at this IP address was being contacted?  | 3 |
+| 2 | The FAZ connector for VirusTotal support multipe actions. These actions use specific parameters. What is the full parameter for the *Query IP* action?  | 5 |
 
 

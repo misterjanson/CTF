@@ -101,5 +101,8 @@ Scheduled query options are as follows:
 
 ### Capture The Flag :checkered_flag:
 FortiAnalyzer includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
-1. What is the Fortinet Signature ID for Black Basta Ransomware?
-2. What is the Fortinet virus signature name for Akira Ransomware?
+
+| # | Question/Flag | Points |
+|---|---------------|--------|
+| 1 | What is the Fortinet Signature ID for Black Basta Ransomware?  | 3 |
+| 2 | What is the Fortinet virus signature name for Akira Ransomware?  | 3 |

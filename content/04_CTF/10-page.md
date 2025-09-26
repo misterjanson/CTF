@@ -25,7 +25,9 @@ You should have received a survey asking for feedback on this workshop. We highl
 
 ### Capture The Flag - Bonus :checkered_flag:
 
-1.	The "Pool Party" technique allows injecting processes using which thread pool?
-2.	FortiMDR has published a case study for which major energy drink brand?
-3.	Fortinet lists the most vulnerable devices for C2 attacks in their cyber glossary. What is the third most targeted device type?
-4.	What is Fortinet’s Threat Radar overall score for Black Basta ransomware?
+| # | Question/Flag | Points |
+|---|---------------|--------|
+| 1 | The "Pool Party" technique allows injecting processes using which thread pool?  | 3 |
+| 2 | FortiMDR has published a case study for which major energy drink brand?  | 3 |
+| 3 | Fortinet lists the most vulnerable devices for C2 attacks in their cyber glossary. What is the third most targeted device type?  | 3 |
+| 4 | What is Fortinet’s Threat Radar overall score for Black Basta ransomware?  | 3 |
