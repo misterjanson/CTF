@@ -8,6 +8,8 @@ In this lab we'll learn how FortiEDR deals with the malicous files used during t
 
 {{% notice note %}}If you refer to the MITRE ATT&CK Matrix the first three tactics of [Reconnaissance](https://attack.mitre.org/tactics/TA0043/), [Resource Development](https://attack.mitre.org/tactics/TA0042/), and [Initial Access](https://attack.mitre.org/tactics/TA0001/) would typically precede Execution. We will not cover all tactics in-depth during the course of these labs.{{% /notice %}}
 
+---
+
 ### Tactic :gear:
 
 **Execution** [ID: TA0002](https://attack.mitre.org/tactics/TA0002/)
@@ -15,6 +17,7 @@ In this lab we'll learn how FortiEDR deals with the malicous files used during t
 The adversary is trying to run malicious code.
 
 Execution consists of techniques that result in adversary-controlled code running on a local or remote system. Techniques that run malicious code are often paired with techniques from all other tactics to achieve broader goals, like exploring a network or stealing data. 
+
 
 ### Technique :bulb:
 
@@ -28,19 +31,25 @@ An adversary may rely upon specific actions by a user in order to gain execution
 
 An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This was the case in our scenario where the user was a target of social engineering. These types of attacks are commonly observed as follow-on behavior from a [Spearfishing Attachment](https://attack.mitre.org/techniques/T1566/001/).
 
+---
+
 ### Mitigation :stop_sign:
 
 **Execution Prevention** [ID: M1038](https://attack.mitre.org/mitigations/M1038/)
 
 Block execution of code on a system through application control, and/or script blocking.
 
+---
+
 ### FortiEDR Prevention :police_officer:
 
 FortiEDR provides multiple out-of-the-box policies. Each policy comes with multiple highly intelligent rules that enforce it. In regards to how FortiEDR can stop the malicious file that was executed in the attack scenario let's look at a FortiEDR security policy.
 
-1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
+1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Click on *Security Settings > Security Events > [Security Policies](https://xperts2025.fortiedr.com/#/security_settings/security_events/security-policies).*
 3. The Security Policies page displays a row for each security policy. Each policy row can be expanded to show the rules that it contains. In this case we'll focus on the *Execution Prevention* policy. This policy blocks the execution of files that are identified as malicious or suspected to be malicious. For this policy, each file is analyzed to find evidence for malicious activity.
+
+![security_policy](security_policy.png?width=600px)
 
 The following information is defined per security policy:
 
@@ -53,13 +62,13 @@ The following information is defined per security policy:
 
 {{% notice tip %}}You can expand the ADVANCED POLICY & RULES DATA area at the bottom left of the window to display a more detailed description of what the rule does and how it works.{{% /notice %}}
 
-1. Click on the Execution Prevention policy to expand the policy to show the associated rules that comprise the policy.
-2. Click on the first rule of the policy *Malicious File Detected*. Note that by default this rule is set to **block** and is **enabled**.
+4. Click on the Execution Prevention policy to expand the policy to show the associated rules that comprise the policy.
+5. Click on the first rule of the policy *Malicious File Detected*. Note that by default this rule is set to **block** and is **enabled**.
 
 ![execution_prevention](execution_prevention_policy.png?width=500px)
 
-3. Click on *ADVANCED POLICY & RULES DATA* at the bottom of the window to display information about this rule.
-4. Notice the *RULE DETAILS*:
+6. Click on *ADVANCED POLICY & RULES DATA* at the bottom of the window to display information about this rule.
+7. Notice the *RULE DETAILS*:
 > The file was identified as malicious by our machine-learning engine or by other means, based on analysis of the file.
 
 This rule provides a proven first layer of defense via a custom-built, kernel-level next-generation
@@ -68,23 +77,23 @@ attacks like ransomware in real time.
 
 In this case the *Malicous File Detected* rule will satisfy the recommendation by MITRE to **mitigate** execution on a system. Let's review this rule in action for the *Windows_Update.exe* file that was downloaded during the attack scenario.
 
-5. Click on [Incidents](https://xperts2025.fortiedr.com/#/incidents) in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) and click on the line for *Windows_Update.exe* to expand a list of events. Incidents are shown descending by default (from newest to oldest).
+8. Click on [Incidents](https://xperts2025.fortiedr.com/#/incidents) in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) and click on the line for *Windows_Update.exe* to expand a list of events. Incidents are shown descending by default (from newest to oldest).
 
 ![windows_update_event](windows_update_event.png?width=500px)
 
-6. Select the earliest event in the timeline. In addition to textual information that is displayed, the Event Graph tab provides an image depicting the process chain, such as connection establishment and data alteration, up to the action that was blocked.
+9. Select the earliest event in the timeline. In addition to textual information that is displayed, the Event Graph tab provides an image depicting the process chain, such as connection establishment and data alteration, up to the action that was blocked.
 
 ![event_graph](event_graph.png?width=500px)
 
 The picture is shown as a timeline from left to right (meaning that the left process happened before the others). Activity event types or actions are represented by a curved line with an arrow, called an "edge". An edge can be one activity event/action or an aggregation of several. The numbered arrows indicate the sequence of actions and specify the action that was performed, such as Process Creation, Socket Close, Block and so on. Edges may also have icons below them indicating classification or violation of certain rules and MITRE & Behavior models. Click on an icon for more detailed information.
 
-7. Click on the red explanation icon to display the FortiEDR rule that was triggered for this incident.
+10. Click on the red explanation icon to display the FortiEDR rule that was triggered for this incident.
 
 ![](mal_file.png?width=500px)
 
 Note that the *Malicious File Detected* rule was triggered for *Windows_Update.exe*. 
 
-8. Click the blue *Investigate* button for this incident to open the *Investigation View* windows.
+11. Click the blue *Investigate* button for this incident to open the *Investigation View* windows.
 
 ![incident_icon](incident_icon.PNG)
 
@@ -96,17 +105,21 @@ The Investigation View window provides a comprehensive overview and event analys
 
 As we can see here FortiEDR's default rules have the ability to satisfy MITRE's suggestion for mitigation by using some form of execution control.
 
+---
+
 ### Detection :mag:
 
 **File Creation** [ID: DS0022](https://attack.mitre.org/datasources/DS0022/)
 
 Monitor for newly constructed files that are downloaded and executed on the user's computer.
 
+---
+
 ### FortiEDR Detection :detective:
 
 FortiEDR’s Threat Hunting functionality enables you to search for many types of Indicators of Compromise (IOCs) and malware across your entire environment in order to enable enhanced detection. Searching can be based on various attributes of files, registry keys and values, network, processes, event log and activity event types. The attributes are useful when considering MITRE's detection recommendations.
 
-1. Access the Threat Hunting page by clicking *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
+1. Access the Threat Hunting page by clicking *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`).
 
 The Threat Hunting page contains the following areas:
 
@@ -159,14 +172,18 @@ The Details pane for an activity event contains a Summary tab, one or two other 
 
 {{% notice warning %}}Get in the habit of using the **Clear All** option in the Filters area of the Threat Hunting Module. Click the elipsis and choose *Clear All* prior to running a new query. In some cases it may also be necessary to increase the time range of a query by using the **Time** drop down and selecting the appropriate range.{{% /notice %}}
 
+---
+
 ### Going Further :rocket:
 
 MITRE ATT&CK also provides information on threat [groups](https://attack.mitre.org/groups/) that are tracked by common names in the security community. Read about the [Sandworm Team](https://attack.mitre.org/groups/G0034/) that has been attributed to Russia's General Staff Main Intelligence Directorate (GRU) Main Center for Special Technologies (GTsST) military unit 74455. You can also read about [campaigns](https://attack.mitre.org/campaigns/) associated with these groups. For example, MITRE documents the Sandworm Team's techniques used during the [2015 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0028/).
 
-### Capture The Flag :checkered_flag:
+---
+
+### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
 
 | # | Question/Flag | Points |
-|---|---------------|--------|
+|---|---------------|:--------:|
 | 1 | What is the name of the server that LockBit.exe was uploaded to? | 1 |
 | 2 | What is the SHA-256 hash of the uploaded LockBit.exe? | 3 |
 | 3 | Find how to directly send this hash from FortiEDR to [VirusTotal](https://www.virustotal.com/). VirusTotal is a free online service that analyzes suspicious files, URLs, domains, and IP addresses for viruses, malware, and other cyber threats. VirusTotal also aggregates results from over 70 different antivirus engines, including those used by Fortinet.  What is the signature name that Fortinet has assigned to this file? | 5 |

@@ -74,15 +74,27 @@ url = "allpages.html"
 weight = 1
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-window'></i> Show CSV"
-url = "/example.csv?download=true"
-weight = 5
-
-
-[[menu.shortcuts]]
 pre = "<i class='fas fa-download'></i> "
 name = "Download CSV 2"
 url = 'chapter-02-markdown/patches/example.csv?download=true'
+weight = 2
+
+[[menu.shortcuts]]
+pre = "<i class='fas fa-link'></i> "
+name = "FortiEDR Documentation"
+url = 'https://docs.fortinet.com/product/fortiedr/7.0'
+weight = 3
+
+[[menu.shortcuts]]
+pre = "<i class='fas fa-link'></i> "
+name = "FAZ Documentation"
+url = 'https://docs.fortinet.com/document/fortianalyzer/7.6.4/administration-guide/366418/setting-up-fortianalyzer'
+weight = 4
+
+[[menu.shortcuts]]
+pre = "<i class='fas fa-globe'></i> "
+name = "MITRE ATT&CK"
+url = 'https://docs.fortinet.com/product/fortiedr/7.0'
 weight = 5
 
 [outputs]

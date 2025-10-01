@@ -8,7 +8,7 @@ weight: 20
 
 The instructor will perform a live attack demonstration using the following network:
 
-![](attack-topology.png?width=600px)
+![topology](Xperts-2025-EDR.png?width=600px)
 
 You will have access to FortiEDR, FortiAnalzyer, and the CTF platform using the information below:
 
@@ -16,21 +16,21 @@ You will have access to FortiEDR, FortiAnalzyer, and the CTF platform using the 
 
 Credentials to the **FortiEDR** Central Manager is the same for all users.
 | Access | Details |
-|-----|--------------------------------------|
+|:-----|:--------------------------------------|
 | URL | [FortiEDR Login](https://xperts2025.fortiedr.com/) |
 | user | `xperts25` |
 | password | `xPerts_54321$` |
 
 Credentials to the **FortiAnalyzer** is the same for all users.
 | Access | Details |
-|-----|--------------------------------------|
-| URL | [FortiAnalyzer Login](https://98.82.30.66/) |
+|:-----|:--------------------------------------|
+| URL | [FortiAnalyzer Login](https://aws.graun.io/) |
 | user | `xperts25` |
 | password | `xPerts_54321$` |
 
 **Capture The Flag**
 | Access | Details |
-|-----|--------------------------------------|
+|:-----|:--------------------------------------|
 | URL | [CTF Login](http://3.19.227.225:8000/) |
 | Registration Code | Xperts2025 |
 | Click [register](http://3.19.227.225:8000/register) link | Create your username and password |

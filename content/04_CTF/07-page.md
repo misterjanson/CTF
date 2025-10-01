@@ -33,11 +33,15 @@ Adversaries may execute active reconnaissance scans to gather information that c
 
 Adversaries may scan victim IP blocks to gather information that can be used during targeting. 
 
+---
+
 ### Mitigation :stop_sign:
 
 **Pre-Compromise** [ID:M1056](https://attack.mitre.org/mitigations/M1056/)
 
 This technique cannot be easily mitigated with default system tools.
+
+---
 
 ### FortiEDR Prevention :police_officer:
 
@@ -55,11 +59,15 @@ A checkmark  in a classification column here means that the device is automatica
 
 **Isolate device with NAC**: This action blocks the communication to/from the affected device by disabling this host on an external Network Access Control system. A NAC connector must already be configured in order to perform this action. 
 
+---
+
 ### Detection :mag:
 
 **Network Traffic Flow** [ID:DS0029](https://attack.mitre.org/datasources/DS0029/#Network%20Traffic%20Flow)
 
 Monitor network data for uncommon data flows. Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious.
+
+---
 
 ### FortiEDR Detection :detective:
 
@@ -67,7 +75,7 @@ The LockBit ransomware scans for ports 135 and 445 which is captured by the Fort
 
 The continuous, realtime collection of Threat Hunting data produces numerous activity events. The sheer volume of activity data can make working directly with these activity events seem cumbersome at times. Therefore, FortiEDR uses **facets** to summarize the data displayed in the results tables. **Facets** are predefined in FortiEDR and represent the same data that is displayed in the results tables, but in an aggregated form. As such, facets represent the aggregation of the values in the results tables.
 
-1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
+1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Click on *Threat Hunting*.
 3. In the Filters dialog box simple type `Lockbit.exe` and press enter. This will display numerous entries in the Activities Event Table.
 4. Click the small *triangle* below the *filter* section to reveal the **Facets and Results Tables**.
@@ -102,13 +110,17 @@ Facets provide an easy-to-use mechanism to aggregate the results in the Activity
 
 {{% notice info %}}Once the broadcast domain is identified LockBit will scan the network iterating from the network ID address and incrementing up to the broadcast address trying to connect over ports 135 or 445, if successful it will try to encrypt the network hosts.{{% /notice %}}
 
+---
+
 ### Going Further :rocket:
 - The [FortiGuard Managed Detection and Response (MDR)](https://www.fortinet.com/solutions/enterprise-midsize-business/mdr) Service is designed for customers of the FortiEDR advanced endpoint security platform. This team of threat experts monitors, reviews and analyzes every alert, proactively hunts threats, and takes actions on behalf of customers to ensure they are protected according to their risk profile.
 
-### Capture The Flag :checkered_flag:
+---
+
+### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
 Using the Facets and Results table identify the file created by LockBit that has information on how to decrypt the data.
 
 | # | Question/Flag | Points |
-|---|---------------|--------|
+|---|---------------|:--------:|
 | 1 | What is the name of this file?  | 5 |
 | 2 | Find how to retrieve this file within the Threat Hunting module. Once retrieved, what is the URL of the first TOR site listed to contact the ransomware operator?  | 10 |

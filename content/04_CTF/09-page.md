@@ -6,6 +6,8 @@ weight: 45
 
 When an attack is finally discovered by most organizations it is because attackers have significantly impacted business operations, such as [encrypting data](https://attack.mitre.org/techniques/T1486/). In this lab we'll take a look at a common impact technique and how threat actors commonly use specific procedures.
 
+---
+
 ### Tactic :gear:
 
 **Impact** [ID:TA0040](https://attack.mitre.org/tactics/TA0040/)
@@ -20,15 +22,19 @@ Impact consists of techniques that adversaries use to disrupt availability or co
 
 Adversaries may delete or remove built-in data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery. This may deny access to available backups and recovery options.
 
+---
+
 ### Mitigation :stop_sign:
 
 **Data Backup** [ID:M1053](https://attack.mitre.org/mitigations/M1053/)
 
 Consider implementing IT disaster recovery plans that contain procedures for taking regular data backups that can be used to restore organizational data. 
 
+---
+
 ### FortiEDR Prevention :police_officer:
 
-1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
+1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Review the entry for VSSVC.exe.
    
 ![](vss1.png?width=600px)
@@ -47,11 +53,15 @@ Consider implementing IT disaster recovery plans that contain procedures for tak
 
 ![faz_t1490](faz_t1490.png?width=600px)
 
+---
+
 ### Detection :mag:
 
 **Command Execution** [ID:DS0017](https://attack.mitre.org/datasources/DS0017/)
 
 Use process monitoring to monitor the execution and command line parameters of binaries involved in inhibiting system recovery, such as vssadmin, wbadmin, and bcdedit.
+
+---
 
 ### FortiEDR Detection :detective:
 
@@ -59,7 +69,7 @@ After filtering the activity events displayed in the result tables, you can save
 
 We’ll use our knowledge of use the common practice of shadow copy deletion to inhibit system recovery to create a scheduled query. 
 
-1. Go to *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
+1. Go to *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. In the Filters area use the following search criteria: ```Target.Process.CommandLine: ("Delete Shadows \/All \/Quiet")```
 3. In the Filters area, at the far right of the page, click the ellipses icon  and select *Save Query*.
 
@@ -95,14 +105,18 @@ Scheduled query options are as follows:
 | Repeat Every/On          | These options enable you to define the frequency and schedule when this query will be run.   |
 | Trigger Playbook Actions | Specifies whether to allow FortiEDR to trigger the corresponding Playbook action of the triggered security event from the scheduled query. Enabling this checkbox allows FortiEDR to automatically apply the action of the Playbook that is assigned to the Collector Group the triggering device belongs to.   |
 
+---
+
 ### Going Further :rocket:
 - MITRE ATT&CK also documents detailed information on the use of software in behavioral modeling. Review the page for [Black Basta](https://attack.mitre.org/software/S1070/) to view the numerous techniques used.
 - The FortiAnalyzer [Outbreak Detection Service](https://www.fortiguard.com/services/outbreak-detection-service) is a licensed feature that allows FortiAnalyzer administrators to view outbreak alerts and automatically download related event handlers and reports from FortiGuard. Review the Outbreak Alert for [Black Basta Ransomware](https://www.fortiguard.com/outbreak-alert/black-basta-ransomware) to find detailed information and resources associated with ransomware that targets critical infrastruce and healthcare.
 
-### Capture The Flag :checkered_flag:
+---
+
+### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
 FortiAnalyzer includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
 
 | # | Question/Flag | Points |
-|---|---------------|--------|
+|---|---------------|:--------:|
 | 1 | What is the Fortinet Signature ID for Black Basta Ransomware?  | 3 |
 | 2 | What is the Fortinet virus signature name for Akira Ransomware?  | 3 |

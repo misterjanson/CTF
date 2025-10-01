@@ -43,7 +43,7 @@ This section of the lab will primarily have you utilizing the capabilites of For
 
 ### Capture The Flag :checkered_flag:
 
-Each lab will have instructions on gathering flags and answering questions. Some questions are more difficult than others and have a higher point value. In some cases a hint can be used, but be careful, using a hint will cost you points.
+Each lab will have instructions on gathering flags and answering questions. Some questions are more difficult than others and have a higher point value. 
 
 ## Objectives
 
