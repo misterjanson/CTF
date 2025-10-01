@@ -6,6 +6,8 @@ weight: 15
 
 In this lab we'll learn how FortiEDR can block common persistence techniques out-of-the-box. We'll also see how FortiEDR incorporates MITRE tagging within the Threat Hunting module.
 
+---
+
 ### Tactic :gear:
 
 **Persistence** [ID: TA0003](https://attack.mitre.org/tactics/TA0003/)
@@ -26,17 +28,21 @@ Adversaries may configure system settings to automatically execute a program dur
 
 Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. Adding an entry to the "run keys" in the Registry or startup folder will cause the program referenced to be executed when a user logs in.
 
+---
+
 ### Mitigation :stop_sign:
 
 **Windows Registry Key Modification**
 
 This type of attack technique cannot be easily mitigated with preventive controls since it is based on the abuse of system features.
 
+---
+
 ### FortiEDR Prevention :police_officer:
 
 Although built-in Windows features cannot mitigate this technique FortiEDR does have policies in place to effectively thwart modifying of OS settings.
 
-1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/)
+1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Click on the incidents for *LockBit.exe*.
 3. Look at the various incidents in the presented event graph to identify an incident showing an attempted change to the registry.
 
@@ -55,17 +61,21 @@ Here we can see various details specific to this incident. Notice that FortiEDR 
 
 {{% notice note %}}In addition to out-of-the-box response actions FortiEDR can orchestrate incident response operations using tailor-made playbooks. We'll see playbooks in action in a later lesson.{{% /notice %}}
 
+---
+
 ### Detection :mag:
 
 **Windows Registry Key Modification** [ID: DS0024](https://attack.mitre.org/datasources/DS0024/)
 
 Monitor Registry for changes to run keys that do not correlate with known software, patch cycles, etc.
 
+---
+
 ### Fortinet Detection :detective:
 
 Each FortiEDR threat hunting activity event may be a part of a behavior and/or a MITRE Technique. 
 
-1. Click on *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/).
+1. Click on *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. You can select which columns should appear in any of the tables using the Choose Columns option at the far right of the page. You can type in the Search box to help narrow the list of columns that display. Type `MITRE` and choose the *MITRE Tactic* column.
 ![choose_columns](choose_columns-1.png)
 3. In the filter dialog box enter `MITRE.Tactic: ("Persistence")` and press *enter*. The activity events that have such behaviors and/or MITRE indications have values in the related columns in the activity events tables, as shown below:
@@ -73,11 +83,13 @@ Each FortiEDR threat hunting activity event may be a part of a behavior and/or a
 4. When an activity event has a related MITRE indication, it is indicated in the Details pane. Click on one of the entries shown to expand the details pane. You can hover over the associated MITRE icon to display more details.
 ![mitre_details](mitre_details.png?width=500px)
 
-### Capture The Flag :checkered_flag:
+---
+
+### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
 
 Review the Event Monitor in FortiAnalyzer to find the following:
 
 | # | Question/Flag | Points |
-|---|---------------|--------|
+|---|---------------|:--------:|
 | 1 | What is the common MITRE Tactic name found on both The-Flame and JPalm-DC? | 3 |
 | 2 | What MITRE Tech ID is assigned for this tactic? | 3 |
