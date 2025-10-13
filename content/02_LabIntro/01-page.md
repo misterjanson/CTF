@@ -6,7 +6,7 @@ weight: 10
 
 The goal of this workshop is not to just learn how to use a specific tool, or tools, but to also leverage a common framework used in the InfoSec industry. With that in mind the [MITRE ATT&CK®](https://attack.mitre.org/) framework will serve as a foundational reference tool through the lab exercises. This page provides key information on MITRE ATT&CK® and you'll also use the publicly available MITRE ATT&CK® knowledge base to find information.
 
-We strongly believe that a basic understanding of this framework will make you a better security practitioner. Additionally, you will find MITRE ATT&CK® referenced in many Fortinet products.
+{{% notice Important %}}We strongly believe that a basic understanding of this framework will make you a better security practitioner. Additionally, you will find MITRE ATT&CK® referenced in many Fortinet products.{{% /notice %}}
 
 ## Overview
 
