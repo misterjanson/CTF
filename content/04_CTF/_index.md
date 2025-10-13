@@ -13,7 +13,7 @@ We have included icons throughout to help you identify the content that is being
 
 During the following labs we'll dig deeper into understanding the attack scenario presented by the instructor to understand how it maps to MITRE ATT&CK and how it can be prevented and detected by Fortinet tools. Each step of the killchain that we'll investigate will provide MITRE information (and links) on **TACTICS** :gear:, **TECHNIQUES** :bulb: (and sub-techniques :bulb:), **MITIGATION** :stop_sign: suggestions, and **DETECTION** :mag: methods. 
 
-You'll then be guided to take steps using **FortiEDR and FortiAnalyzer** to **prevent** :police_officer: and **detect** :detective: these threats.
+You'll then be guided to take steps using FortiEDR and FortiAnalyzer to **PREVENT** :police_officer: and **DETECT** :detective: these threats.
 
 ### Tactic :gear:
 

@@ -91,5 +91,5 @@ Review the Event Monitor in FortiAnalyzer to find the following:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | What is the common MITRE Tactic name found on both The-Flame and JPalm-DC? | 3 |
+| 1 | What is the Execution technique associated with LockBit.exe on the Domain Controller? | 3 |
 | 2 | What MITRE Tech ID is assigned for this tactic? | 3 |

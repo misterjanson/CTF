@@ -4,7 +4,7 @@ menuTitle: Attack Scenario
 weight: 30
 ---
 
-The documentation presented here can be used as a reference to configure Kali Linux to run in your own lab environment. With this basic setup you can duplicate the steps presented in the Live Attack Demonstration (and more). You will first need to install Kali Linux (typically as a VM) in your lab environment by visiting the [KALI](https://www.kali.org/get-kali/#kali-platforms) site.
+The documentation presented here can be used as a reference to configure Kali Linux to run in your own lab environment. With this basic setup you can duplicate the steps presented in the Live Attack Demonstration (and more). This setup is simple and effective for testing and demonstration purposes. You will first need to install Kali Linux (typically as a VM) in your lab environment by visiting the [KALI](https://www.kali.org/get-kali/#kali-platforms) site.
 
 ![base](all_your_base.png?width=500px)
 

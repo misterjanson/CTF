@@ -5,7 +5,7 @@ weight: 10
 ---
 Please follow along as the instructor walks through a live attack scenario in which a user is the target of social engineering. In this scenario the user downloads a file that leads to initial access into an active directory environment. 
 
-As the scenario progresses be mindful of various tactics and techniques that are documented in the MITRE ATT&CK framework. Subsequently, we'll spend time investing this attack within the FortiEDR Central Manager to understand how these attacks look from a defender's pespective.
+As the scenario progresses be mindful of various tactics and techniques that are documented in the MITRE ATT&CK framework. Subsequently, we'll spend time investing this attack within the FortiEDR and FortiAnalyzer to understand how these attacks look from a defender's perspective.
 
 ## Lateral Movement
 
