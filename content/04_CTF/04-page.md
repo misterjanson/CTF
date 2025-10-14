@@ -77,7 +77,7 @@ When you hover over an item in the table, a green and red button appear to its r
 
 ### FortiAnalyzer Detection :detective:
 
-1. Login to [FortiAnalyzer](https://aws.graun.io/) (`xperts25` / `xPerts_54321$`)
+1. Login to [FortiAnalyzer](https://98.82.30.66/ui/login) (`xperts25` / `xPerts_54321$`)
 2. After event handlers start generating events, view events and event details in *Incidents & Events > Event Monitor*.
 
 The Explorer pane allows you to efficiently monitor events using a timeline and quick filters.

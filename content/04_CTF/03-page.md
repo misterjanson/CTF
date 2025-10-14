@@ -87,7 +87,7 @@ Each FortiEDR threat hunting activity event may be a part of a behavior and/or a
 
 ### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
 
-Review the Event Monitor in FortiAnalyzer to find the following:
+Review the Event Monitor in FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) to find the following:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
