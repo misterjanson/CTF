@@ -142,7 +142,7 @@ FortiEDR categorizes the various actions into the following categories:
 
 We'll use this information to quickly take a look at the initial creation of the Lockbit.exe ransomware file:
 
-2. In the Filters dialog box simple type `Lockbit.exe` and press enter. This will display numerous entries in the Activities Event Table. Let's narrow that down.
+2. In the Filters dialog box simply type `Lockbit.exe` and press enter. This will display numerous entries in the Activities Event Table. Let's narrow that down.
 
 ![01_TH](01_threat_hunt.png?width=500px)
 

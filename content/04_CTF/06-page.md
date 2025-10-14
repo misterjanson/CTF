@@ -67,7 +67,7 @@ Monitor for unexpected processes interacting with LSASS.exe.
 
 ### FortiAnalyzer Detection :detective:
 
-1. Login to [FortiAnalyzer](https://aws.graun.io/) (`xperts25` / `xPerts_54321$`)
+1. Login to [FortiAnalyzer](https://98.82.30.66/ui/login) (`xperts25` / `xPerts_54321$`)
 2. Navigate to *Incidents & Events > Incidents > MITRE ATT&CK®:Attack*
 3. Under the column header for the **Credential Access** tactic find the tile for **OS Credential Dumping**. An icon and count displays on the tile. 
 

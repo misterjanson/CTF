@@ -99,7 +99,7 @@ Monitor for web traffic to/from known-bad or suspicious domains and analyze traf
 
 ### FortiAnalyzer Detection :detective:
 
-1. Login to [FortiAnalyzer](https://aws.graun.io/) (`xperts25` / `xPerts_54321$`)
+1. Login to [FortiAnalyzer](https://98.82.30.66/ui/login/) (`xperts25` / `xPerts_54321$`)
 2. Go to the *Incidents & Events > Indicators* pane which consolidates all detected indicators for centralized analysis. This streamlines threat evaluation and enables SOC analysts to take swift action to mitigate risks.
 
 ![faz_indicators](faz_indicators.png?width=600px)
