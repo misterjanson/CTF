@@ -1,7 +1,7 @@
 ---
 title: What's New in FortiEDR
 menuTitle: What's New in FortiEDR
-weight: 5
+weight: 10
 ---
 FortiEDR 7.2 offers multiple new features that will move the product line further ahead in terms of capabilities and security coverage. 
 

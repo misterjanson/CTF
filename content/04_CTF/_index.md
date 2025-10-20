@@ -43,7 +43,9 @@ This section of the lab will primarily have you utilizing the capabilites of For
 
 ### Capture The Flag :checkered_flag:
 
-Each lab will have instructions on gathering flags and answering questions. Some questions are more difficult than others and have a higher point value. 
+Each lab will have instructions on gathering flags and answering questions. Some questions are more difficult than others and have a higher point value. In some cases the answer will require you to "think outside the box" and find answers in locations that aren't specifically covered in the lab, use any and all resources you can think of. 
+
+{{% notice important %}} CTF questions do **NOT** have to be answered in order. If you'd like to skip a question, or return to one later, feel free to do so.{{% /notice %}}
 
 ## Objectives
 
