@@ -1,7 +1,7 @@
 ---
 title: Capture The Flag
 menuTitle: Capture The Flag
-weight: 40
+weight: 15
 ---
 The subsequent labs will have you using FortiEDR and FortiAnalyzer, along with your knowledge of MITRE ATT&CK, to find “flags” and answer questions that test your knowledge. This will be accomplished by performing investigation steps that align to tactics, techniques, detection, and mitigation. 
 

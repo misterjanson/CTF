@@ -1,7 +1,7 @@
 ---
 title: Privilege Escalation Lab
 menuTitle: Privilege Escalation Lab
-weight: 20
+weight: 40
 ---
 
 In this lab we'll continue to build upon your capabilities to effectively leverage the FortiEDR Threat Hunting module. We'll then learn how events triggered by FortiEDR can be viewed in FortiAnalyzer.

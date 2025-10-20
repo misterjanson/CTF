@@ -1,7 +1,7 @@
 ---
 title: Command & Control Lab
 menuTitle: Command & Control Lab
-weight: 40
+weight: 70
 ---
 
 This lab will focus on identifying Command and Control (C2) activity. In addition, we'll see how FortiEDR's Automated Incident Response (AIR) playbooks can automate immediate responses to these communication channels. We'll also learn how FortiAnalyzer can add enrichment to events automatically.

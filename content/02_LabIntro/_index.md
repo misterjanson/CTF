@@ -1,7 +1,7 @@
 ---
 title: Lab Overview
 menuTitle: Lab Overview
-weight: 1
+weight: 10
 ---
 
 ## Topology
