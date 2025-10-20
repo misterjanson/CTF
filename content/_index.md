@@ -6,7 +6,7 @@ archetype: home
 ![alt text](xperts2025_logo.PNG)
 ## Workshop Guide
 
-**Written By:** Jason Palm & Jason Graun
+**Written By:** Jason Palm, Kyle Krisher & Jason Graun
 
 ![alt text](Threat-Detection-and-Response.png?width=400px)
 

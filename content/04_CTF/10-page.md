@@ -37,6 +37,6 @@ You should have received a survey asking for feedback on this workshop. We highl
 | 2 | FortiMDR has published a case study for which major energy drink brand?  | 3 |
 | 3 | Fortinet lists the most vulnerable devices for C2 attacks in their cyber glossary. What is the third most targeted device type?  | 3 |
 | 4 | What is Fortinet’s Threat Radar overall score for Black Basta ransomware?  | 5 |
-| 5 | FortiEDR 7.0 integrates Adversary Centric Intelligence (ACI) from what Fortinet product? ?  | 3 |
+| 5 | FortiEDR 7.2 integrates Adversary Centric Intelligence (ACI) from what Fortinet product? ?  | 3 |
 | 6 | What Japanese video game that is the source of an infamous meme is referenced in this workshop?   | 2 |
 | 7 | What infamous attack did the US indict Russian GRU Unit officers (associated with Sandworm Team) of in 2017?   | 3 |

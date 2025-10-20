@@ -17,7 +17,7 @@ title = "Capture the Flag with FortiEDR and FortiAnalyzer"
 
 [params]
 # Author of the site, will be used in meta information
-author.name = "Your name"
+author.name = "Jason Palm, Kyle Krisher, Jason Graun"
 
 # Select a color theme.
 # special
@@ -35,7 +35,7 @@ themeVariant = "Xperts2025"
 # The banner text under Fortinet logo on the top left of the project. Better to be short.
 logoBannerText = "CTF with FEDR & FAZ"
 # Small text under the title
-logoBannerSubText = "Internal Only"
+logoBannerSubText = "Fortinet Partners"
 ################################# END EDITING #################################
 
 
