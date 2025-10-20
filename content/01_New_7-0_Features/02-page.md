@@ -1,7 +1,7 @@
 ---
 title: Security Operations in FAZ
 menuTitle: Security Operations in FAZ
-weight: 10
+weight: 15
 ---
 FortiAnalyzer 7.6.4 includes new Security Operations (SOC) features that increase the visibility for a SOC Analyst.
 
