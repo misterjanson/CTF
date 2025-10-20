@@ -1,7 +1,7 @@
 ---
 title: Persistence Lab
 menuTitle: Persistence Lab
-weight: 15
+weight: 30
 ---
 
 In this lab we'll learn how FortiEDR can block common persistence techniques out-of-the-box. We'll also see how FortiEDR incorporates MITRE tagging within the Threat Hunting module.

@@ -1,7 +1,7 @@
 ---
 title: Impact Lab
 menuTitle: Impact Lab
-weight: 45
+weight: 80
 ---
 
 When an attack is finally discovered by most organizations it is because attackers have significantly impacted business operations, such as [encrypting data](https://attack.mitre.org/techniques/T1486/). In this lab we'll take a look at a common impact technique and how threat actors commonly use specific procedures.

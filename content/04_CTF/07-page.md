@@ -1,7 +1,7 @@
 ---
 title: Lateral Movement Lab
 menuTitle: Lateral Movement Lab
-weight: 35
+weight: 60
 ---
 In this lesson we'll explore how adversaries may use multiple tactics to achieve a particular action. One of the ways that adversaries use multiple tactics is when attempting to move laterally through a network. Following through on their primary objective often requires exploring the network to find their target and subsequently gaining access to it. Reaching their objective often involves pivoting through multiple systems and accounts to gain further access. Adversaries might install their own remote access tools to accomplish Lateral Movement or use legitimate credentials with native network and operating system tools, which may be stealthier.
 

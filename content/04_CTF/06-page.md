@@ -1,7 +1,7 @@
 ---
 title: Credential Access Lab
 menuTitle: Credential Access Lab
-weight: 30
+weight: 50
 ---
 
 This lab will focus on understanding common techniques, and sub-techniques, used by attackers to access credentials on victim machines. We'll then see how some of these specific tactics can be viewed in FortiAnalyzer.

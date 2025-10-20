@@ -1,7 +1,7 @@
 ---
 title: Execution Lab
 menuTitle: Execution Lab
-weight: 10
+weight: 20
 ---
 
 In this lab we'll learn how FortiEDR deals with the malicous files used during the attack scenario. We'll also learn how powerful FortiEDR's Threat Hunting module is and understand the information it provides to identify behaviors associated with attacker's tactics and techniques.
