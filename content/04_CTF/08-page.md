@@ -44,23 +44,19 @@ Network intrusion detection and prevention systems that use network signatures t
 2. Find the incident where *cloud.exe* is spawned as a child process of *Windows_Update.exe*
 3. Review the event graph, noting that *cloud.exe* is making a network connection to IP *1.123.37.68*. Click on the *Investigate* button.
 
-![](cc1.png?width=500px)
+![](cc1.png?width=700px)
 
 4. Select the *Event Analysis* tab for this incident.
 
 ![](cc2.png)
 
-5. Click on the elipsis for *Incident Response* and expand the *Malicous* entry to reveal the Automatic Incident Response action.
+5. Click on the elipsis for *Incident Response* and expand the *Malicous* entries to reveal the Automatic Incident Response actions. In this case FortiEDR has leveraged an integration with a FortiGate to block this IP due to a malicious classification.
 
 ![](cc3.png?width=500px)
 
-In this case FortiEDR has leveraged an integration with a FortiGate to block this IP due to a malicious classification.
-
-6. Click the elipsis for *Automated Analysis* and then expand the *Network & Extended Data* section.
+6. Click the elipsis for *Automated Analysis* and then expand the *Network & Extended Data* section. FortiEDR native integration with [FortiGuard Labs](https://www.fortinet.com/fortiguard/labs) allows up-to-date intelligence, supporting real-time incident classification to enable accurate incident response playbook activation.
 
 ![](cc4.png?width=500px)
-
-FortiEDR native integration with [FortiGuard Labs](https://www.fortinet.com/fortiguard/labs) allows up-to-date intelligence, supporting real-time incident classification to enable accurate incident response playbook activation.
 
 #### Playbooks
 
@@ -69,7 +65,7 @@ The FortiEDR Playbooks feature determines which automatic actions are triggered,
 1. Select *SECURITY SETTINGS > Playbooks*. The AUTOMATED INCIDENT RESPONSE – PLAYBOOKS page displays a row for each Playbook policy.
 2. Expand the **Default Playbook** policy row to show the actions it contains.
 
-![](AIR.png?width=600px)
+![](AIR.png?width=700px)
 
 Playbook policy actions are divided into the following types:
 - Notifications
@@ -85,7 +81,7 @@ Each of these categories contains different types of actions that can be perform
   - Clean persistent data
   - Block address on Firewall
 
-4. Note that in our case the *Block address on Firewall* remediation is configured to block *Malicious* and *Suspicious* events on the firewall named *"HQ"*. This action ensures that connections to remote malicious addresses that are associated with the security event are blocked. A Firewall Connector must already be configured in order to perform this action.
+4. Note that in our case the *Block address on Firewall* remediation is configured to block *Malicious* and *Suspicious* events on a firewall. This action ensures that connections to remote malicious addresses that are associated with the security event are blocked. A Firewall Connector must already be configured in order to perform this action.
 
 ---
 
@@ -102,11 +98,11 @@ Monitor for web traffic to/from known-bad or suspicious domains and analyze traf
 1. Login to [FortiAnalyzer](https://98.82.30.66/ui/login/) (`xperts25` / `xPerts_54321$`)
 2. Go to the *Incidents & Events > Indicators* pane which consolidates all detected indicators for centralized analysis. This streamlines threat evaluation and enables SOC analysts to take swift action to mitigate risks.
 
-![faz_indicators](faz_indicators.png?width=600px)
+![faz_indicators](faz_indicators.png?width=700px)
 
 3. Double-click on the entry for IP 1.123.37.68 to view the indicator enrichment.
 
-![faz_enrich](faz_enrich.png?width=600px)
+![faz_enrich](faz_enrich.png?width=700px)
 
 4. Review the details in the *Enrich* pane. When indicators are enriched, FortiAnalyzer will display the following information:
 
@@ -120,7 +116,7 @@ Monitor for web traffic to/from known-bad or suspicious domains and analyze traf
 
 5. Go to *Incidents & Events > Automation > Playbook Monitor* and double-click the *Indicator Enrichment* playbook that was triggered.
 
-![faz_playbook](faz_playbook.png?width=600px)
+![faz_playbook](faz_playbook.png?width=700px)
 
 Playbooks improve response times and reduce manual workload. In this case the *Indicator Enrichment* playbook uses different [connectors](https://docs.fortinet.com/document/fortianalyzer/7.6.4/administration-guide/885830/active-connectors) (VirusTotal and FortiGuard). The indicator enrichment feature empowers security analysts by providing them with comprehensive threat intelligence on identified IP addresses, domains, and URLs. This enriched context allows for a deeper understanding of security incidents, leading to more informed and effective response decisions.
 
@@ -132,10 +128,11 @@ Playbooks improve response times and reduce manual workload. In this case the *I
 ---
 
 ### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
+Use the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) and [FortiAnalyzer](https://98.82.30.66/ui/login/) (`xperts25` / `xPerts_54321$`) to find the following flags:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | Once *Windows_Update.exe* was executed it spawned another process named *cloud.exe*. This process began making a connection to an Australian IP address that served as Command & Control. What remote port at this IP address was being contacted?  | 3 |
-| 2 | The FAZ connector for VirusTotal support multipe actions. These actions use specific parameters. What is the full parameter for the *Query IP* action?  | 5 |
+| 1 | **Event Analysis:** Once *Windows_Update.exe* was executed it spawned another process named *cloud.exe*. This process began making a connection to an Australian IP address that served as Command & Control. What remote port at this IP address was being contacted?  | 5 |
+| 2 | **Query Question:** The FAZ connector for VirusTotal support multipe actions. What is the first action listed in the actions table for the VirusTotal connector?  | 5 |
 
 

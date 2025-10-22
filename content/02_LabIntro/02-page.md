@@ -8,7 +8,7 @@ weight: 30
 
 Please follow along as the instructor walks through a live attack scenario in which a user is the target of social engineering. In this scenario the user downloads a file that leads to initial access into an active directory environment. 
 
-As the scenario progresses be mindful of various tactics and techniques that are documented in the MITRE ATT&CK framework. Subsequently, we'll spend time investing this attack within the FortiEDR and FortiAnalyzer to understand how these attacks look from a defender's perspective.
+As the scenario progresses be mindful of various tactics and techniques that are documented in the MITRE ATT&CK framework. Subsequently, we'll spend time investing this attack within FortiEDR and FortiAnalyzer to understand how these attacks look from a defender's perspective.
 
 ### Create A Payload
 
@@ -63,6 +63,3 @@ After initial compromise of a domain workstation the instructor will laterally m
     - `set SESSION 2`
 7. Launch exploit
     - `exploit -j`
-
-### Going Further :rocket:
-- To see all the fun stuff that Meterpreter can do use the `help` command

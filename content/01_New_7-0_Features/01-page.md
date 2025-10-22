@@ -7,29 +7,29 @@ FortiEDR 7.2 offers multiple new features that will move the product line furthe
 
 ## New Dashboards :tv:
 
-EDR 7.2 delivers a new dashboard experience with customizable widgets to create a unique view for each analyst using the console. Improvements to the UI provide FortiEDR administrators a more modern look and feel. 
+FEDR 7.2 delivers a new dashboard experience with customizable widgets to create a unique view for each analyst using the console. Improvements to the UI provide administrators a more modern look and feel. 
 
 The following is the previous 6.2 dashboard view:
 
-![](old_dashboard.png?width=500px)
+![](old_dashboard.png?width=700px)
 
-Here is a view of the new 7.0 dashboard:
+Here is a view of the new 7.2 dashboard:
 
-![](new_dashboard.png?width=500px)
+![](new_dashboard.png?width=700px)
 
 ## Changes to the Workflow of Events :man_technologist:
 
-The *Event Viewer* tab is renamed *Incidents* with usability improvements, such as tabbed view of different types of incidents. Clicking on an incident displays the Handle Incident button and an embedded preview of the investigation view within the console where you can perform operations without opening a separate tab.
+The *Event Viewer* tab is renamed *Incidents* with usability improvements, such as a tabbed view of different types of incidents. Clicking on an incident displays the *Handle Incident* button and an embedded preview of the investigation view within the console where you can perform operations without opening a separate tab.
 
-![new_incidents](new_incidents.png?width=600px)
+![new_incidents](new_incidents.png?width=700px)
 
-Clicking the *Investigate* button opens the full investigation view within the console with an *Overview* tab that shows the audit history and policy violation information. 
+Clicking the *Investigate* button opens the full investigation view within the console. First displayed is an *Overview* tab that shows the audit history and policy violation information. 
 
-![new_overview](new_overview.png?width=600px)
+![new_overview](new_overview.png?width=700px)
 
-The *Event Analysis* tab that shows the full investigation view. You can also switch to full screen or open the investigation view in a new tab using the buttons at the top-right corner.
+The *Event Analysis* tab shows the full investigation view. You can also switch to full screen or open the investigation view in a new tab using the buttons at the top-right corner.
 
-![new_analysis](new_analysis.png?width=600px)
+![new_analysis](new_analysis.png?width=700px)
 
 ## Protection for Mobile Devices :iphone:
 
@@ -46,9 +46,13 @@ The *Communication Control > Applications* page replaces the Vulnerability colum
 - **NIST Severity** — Rating provided by FortiEDR’s vulnerability scoring system leveraging the NIST Cybersecurity Framework.
 - **ACI Severity** — Adversary Centric Intelligence (ACI) rating provided by FortiRecon leveraging FortiGuard Threat Analysts to provide comprehensive coverage of dark web, open source, and technical threat intelligence, including threat actor insights. This information enables administrators to proactively assess risks, respond faster to incidents, better understand their attackers, and protect assets.
 
+![aci](aci.png)
+
 ## Security Compliance :memo:
 
 The *Inventory > Collectors* page includes the new DISK ENCRYPTION  and DEVICE SECURITY columns which provides insights into the security status of Windows and macOS endpoints.
+
+![status](new_status.png)
 
 The device is marked as compliant if two or more of the following criteria are met:
 

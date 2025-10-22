@@ -7,13 +7,23 @@ The subsequent labs will have you using FortiEDR and FortiAnalyzer, along with y
 
 Each lab will increase your knowledge of how the tools at your disposal function and can be utilized. At the end of each lab, you’ll be presented with questions to test your understanding and ability to locate “flags” within the lab environment. 
 
-We have included icons throughout to help you identify the content that is being presented and steps that you need to take. Please refer to the explanation for this as follows:
+We have included icons throughout to help you identify the content that is being presented and steps that you need to take. Please refer to the following explanation of how each lab flows:
+
+##
+----
+## 
+
 
 ## Investigation Steps
 
 During the following labs we'll dig deeper into understanding the attack scenario presented by the instructor to understand how it maps to MITRE ATT&CK and how it can be prevented and detected by Fortinet tools. Each step of the killchain that we'll investigate will provide MITRE information (and links) on **TACTICS** :gear:, **TECHNIQUES** :bulb: (and sub-techniques :bulb:), **MITIGATION** :stop_sign: suggestions, and **DETECTION** :mag: methods. 
 
 You'll then be guided to take steps using FortiEDR and FortiAnalyzer to **PREVENT** :police_officer: and **DETECT** :detective: these threats.
+
+##
+----
+## 
+
 
 ### Tactic :gear:
 
@@ -41,17 +51,35 @@ This section of the lab will primarily have you utilizing the capabilites of For
 
 {{% notice note %}} Whenever you see the :police_officer: or :detective: icons that is your cue to use Fortinet tools.{{% /notice %}}
 
+##
+----
+## 
+
+
+## Going Further :rocket:
+
+At the end of various sections of this workshop will be items to help further your understanding of the concepts covered therein. It is recommended that you use these prompts as time permits. Although these items are not central to completing this workshop it is recommended you consider them as a means of increasing your security knowledge. Additionally, you will find bonus CTF questions based on this information somewhere in this workshop.
+
+##
+----
+## 
+
+
 ### Capture The Flag :checkered_flag:
 
-Each lab will have instructions on gathering flags and answering questions. Some questions are more difficult than others and have a higher point value. In some cases the answer will require you to "think outside the box" and find answers in locations that aren't specifically covered in the lab, use any and all resources you can think of. 
+At the end of each lab you will find instructions on gathering flags and answering questions. Some questions are more difficult than others and have a higher point value. In some cases the answer will require you to "think outside the box" and find answers in locations that aren't specifically covered in the lab, use any and all resources you can think of. 
 
 {{% notice important %}} CTF questions do **NOT** have to be answered in order. If you'd like to skip a question, or return to one later, feel free to do so.{{% /notice %}}
+
+##
+----
+## 
 
 ## Objectives
 
 - Understand how to operationalize the MITRE ATT&CK framework
 - Understand how FortiEDR provides comprehensive prevention capabilities
-- Observe how FortiEDR and FortiAnalyzer maps to the MITRE ATT&CK framework
+- Observe how FortiEDR and FortiAnalyzer map to the MITRE ATT&CK framework
 - Learn to use the FortiEDR Central Manager and FortiAnalyzer console to perform investigations
 
 ## Time to Complete
