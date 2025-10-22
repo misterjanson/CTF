@@ -14,11 +14,11 @@ The goal of this workshop is not to just learn how to use a specific tool, or to
 
 FortiEDR stands out in its ability to provide rapid insights. It fuses deep analytic capabilities with a detailed understanding of the MITRE ATT&CK framework. This harmonization empowers organizations to anticipate and tackle threats, such as nation-state threats, which pose severe security concerns for enterprises globally.
 
-By leveraging FortiEDR threat hunting capabilities and its ability to identify behavior along the MITRE ATT&CK framework, organizations can pinpoint related [Indicators of Compromise (IOCs)](https://www.fortinet.com/resources/cyberglossary/indicators-of-compromise) with unparalleled precision to enable a proactive stance against potential breach attempts. This holistic approach, rooted in insight and foresight, underscores the pivotal role of FortiEDR within an organization’s security strategy.
+By leveraging Fortinet's threat hunting capabilities and its ability to identify behavior along the MITRE ATT&CK framework, organizations can pinpoint related [Indicators of Compromise (IOCs)](https://www.fortinet.com/resources/cyberglossary/indicators-of-compromise) with unparalleled precision to enable a proactive stance against potential breach attempts. This holistic approach, rooted in insight and foresight, underscores the pivotal role of Fortinet security tools within an organization’s security strategy.
 
 In this section, we'll learn how to operationalize MITRE ATT&CK® to understand how threat actors operate, and how we can detect and prevent adversary tactics and techniques.
 
-![matrix](matrix.PNG?width=500px)
+![matrix](matrix.PNG?width=700px)
 
 ## Key Concepts
 
@@ -34,7 +34,7 @@ First, we will need to understand some of the main components of the ATT&CK mode
 
 We'll first view the MITRE ATT&CK® Matrix for Enterprise which shows the associated tactics and techniques. Click [here](https://attack.mitre.org/matrices/enterprise/) to open the ATT&CK Matrix in a new tab for reference.
 
-![matrix](mitre-attack-enterprise.png?width=500px)
+![matrix](mitre-attack-enterprise.png?width=700px)
 
 ## ATT&CK® Matrix Organization
 

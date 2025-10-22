@@ -34,19 +34,27 @@ Some endpoint security solutions can be configured to block some types of proces
 
 ### FortiEDR Prevention :police_officer:
 
-During the attack scenario we used a code injection technique to escalate priviliges. FortiEDR has out-of-the-box rules to prevent various types of injection techniques. 
+During the attack scenario the attacker used a process injection technique to escalate privileges. FortiEDR has out-of-the-box rules to prevent various types of injection techniques. 
 
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Click on the filter icon near the top of the window to open the detailed filtering pane.
+
 ![filter_icon](filter_icon.PNG)
+
 3. Using the *Rules* dropdown type `inject` to filter the available rules and then choose the "Injected Thread" rule. Click the *Apply Filters* button.
-![injected_thread](injected_thread.png?width=500px)
+
+![injected_thread](injected_thread.png?width=700px)
+
 4. Click on the entry for **control.exe**. Notice that the event graph shows the *control.exe* process injecting into the *winlogon.exe* process.
-![inject_event](inject_event.png?width=500px)
+
+![inject_event](inject_event.png?width=700px)
+
 5. Click the *Investigate* button to view this event in Investigation View.
-6. Click the Event Analysis tab. Here we can see clearly in the provided graphic the steps in the injection along with the MITRE icon indicating once again FortiEDR associating this behavior with a MITRE tactic and technique. 
-![investigate_injection](investigate_injection.png?width=500px)
-7. Click on the MITRE icon to view the tagged Tactics and Technique.
+6. Click the Event Analysis tab. 
+7. Here we can see clearly in the provided graphic the steps in the injection along with the MITRE icon indicating once again FortiEDR associating this behavior with a MITRE tactic and technique. 
+
+![investigate_injection](investigate_injection.png?width=700px)
+
 
 {{% notice note %}}Some techniques can fall under the category of multiple tactics. In this case we see that process injection is a technique of both the **Privilege Escalation** and **Defense Evasion** tactics.{{% /notice %}}
 
@@ -62,31 +70,33 @@ Monitor for changes made to processes that may inject code into processes in ord
 
 ### FortiEDR Detection :detective:
 
-The Threat Hunting  activity events tables area can be used to easily add filters to a query.
-
-When you hover over an item in the table, a green and red button appear to its right. Click the green plus button to include that item as a filter or click the red minus button to exclude that item as a filter.
+The Threat Hunting  activity events tables area can be used to easily add filters to a query. When you hover over an item in the table, a green and red button appear to its right. Click the green plus button to include that item as a filter or click the red minus button to exclude that item as a filter.
 
 1. Click *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Type `control.exe` in the filter dialog box and press *enter* to narrow down the results.
+
+![alt text](pe_filter.png)
+
 3. Find the entry that has a **source process** of *control.exe* and a **target process** of *winlogon.exe*. Hover over each process and click the green plus button to add it to the filter criteria. 
-![green_button](green_button.png?width=500px)
+
+![green_button](green_button.png?width=700px)
+
 4. Once both processes have been added to the query you can now see how this view resembles what we previously reviewed in the Investigation View.
-![filtered_buttons](filtered_activity_buttons.png?width=500px)
+
+![filtered_buttons](filtered_activity_buttons.png?width=700px)
 
 ---
 
 ### FortiAnalyzer Detection :detective:
 
 1. Login to [FortiAnalyzer](https://98.82.30.66/ui/login) (`xperts25` / `xPerts_54321$`)
-2. After event handlers start generating events, view events and event details in *Incidents & Events > Event Monitor*.
+2. After event handlers start generating events, view events and event details in *Incidents & Events > Event Monitor*. The Explorer pane allows you to efficiently monitor events using a timeline and quick filters.
 
-The Explorer pane allows you to efficiently monitor events using a timeline and quick filters.
-
-![faz_process_injection](faz_process_injection.png?width=600px)
+![faz_process_injection](faz_process_injection.png?width=700px)
 
 3. Double-click the record for device *JPalm-DC* for the Event Handler *FortiEDR Process Injection* to display the Event Details Pane.
 
-![faz_event_details](faz_event_details.png?width=600px)
+![faz_event_details](faz_event_details.png?width=700px)
 
 This pane is named after the event, and it displays with the following tabs:
 
@@ -108,11 +118,11 @@ This pane is named after the event, and it displays with the following tabs:
 ---
 
 ### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
-Review the Event Details for the previously reviewed event in FortiAnalyzer to find the following:
+Use [FortiAnalyzer](https://98.82.30.66/ui/login) (`xperts25` / `xPerts_54321$`) to review events, logs, and configurations to find the following flags:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | The triggered event is a result of a specific FortiAnalyzer Event Handler. What is the Handler ID assigned to this event handler?  | 3 |
-| 2 | The source of these events are generated by FortiEDR logs. These are received as raw logs and parsed by FortiAnalyzer. These logs contain extensive information. Based on the FortiEDR logs what Threat Family is associated with this Process Injection event?  | 3 |
-| 3 | What FortiEDR Log Parser version was used to parse the current logs?  | 5 |
+| 1 | **All in the Family**: The source of these events are generated by FortiEDR logs. These are received as raw logs and parsed by FortiAnalyzer. These logs contain extensive information. Based on the FortiEDR logs what Threat Family is associated with this Process Injection event?  | 5 |
+| 2 | **Version Control**: What FortiEDR Log Parser version was used to parse the current logs?  | 5 |
+| 3 | **ID, Please:** The triggered event is a result of a specific FortiAnalyzer Event Handler. What is the Handler ID assigned to this event handler?  | 10 |
 

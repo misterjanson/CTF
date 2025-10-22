@@ -40,22 +40,18 @@ This type of attack technique cannot be easily mitigated with preventive control
 
 ### FortiEDR Prevention :police_officer:
 
-Although built-in Windows features cannot mitigate this technique FortiEDR does have policies in place to effectively thwart modifying of OS settings.
+Although built-in Windows features cannot mitigate this technique FortiEDR does have policies in place to effectively thwart modifying OS settings.
 
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Click on the incidents for *LockBit.exe*.
-3. Look at the various incidents in the presented event graph to identify an incident showing an attempted change to the registry.
+3. Click on the various incidents in the presented event graph to identify an incident showing an attempted change to the registry. FortiEDR excels at providing post-execution protection that stops advanced malware in real time. In this case, when a process attempts to modify OS settings such as changing the registry, FortiEDR rules provide prevention.
 
-![lockbit_incident](lockbit_incident.png?width=500px)
-
-FortiEDR excels at providing post-execution protection that stops advanced malware in real time. In this case, when a process attempts to modify OS settings such as changing the registry, FortiEDR rules provide prevention.
+![lockbit_incident](lockbit_incident.png?width=600px)
 
 4. Click on the blue *Investigate* button to analyze this event further.
-5. Click on the *Event Analysis* tab in the Investigation View window.
+5. Click on the *Event Analysis* tab in the Investigation View window. Here we can see various details specific to this incident. Notice that FortiEDR has marked the process activity with **Destination: Modify OS Settings** and the event graph shows the registry key that Lockbit.exe attempted to change.
 
-Here we can see various details specific to this incident. Notice that FortiEDR has marked the process activity with **Destination: Modify OS Settings** and the event graph shows the registry key that Lockbit.exe attempted to change.
-
-![lockbit_registry](lockbit_registry_response.png?width=500px)
+![lockbit_registry](lockbit_registry_response.png?width=600px)
 
 6. Click on the elipsis next to *Incident Response* to review the details of how FortiEDR can block this registry key change.
 
@@ -77,19 +73,24 @@ Each FortiEDR threat hunting activity event may be a part of a behavior and/or a
 
 1. Click on *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. You can select which columns should appear in any of the tables using the Choose Columns option at the far right of the page. You can type in the Search box to help narrow the list of columns that display. Type `MITRE` and choose the *MITRE Tactic* column.
-![choose_columns](choose_columns-1.png)
+
+![choose_columns](choose_columns-1.png?width=500px)
+
 3. In the filter dialog box enter `MITRE.Tactic: ("Persistence")` and press *enter*. The activity events that have such behaviors and/or MITRE indications have values in the related columns in the activity events tables, as shown below:
+
 ![activity_events](activity_events.PNG?width=500px)
+
 4. When an activity event has a related MITRE indication, it is indicated in the Details pane. Click on one of the entries shown to expand the details pane. You can hover over the associated MITRE icon to display more details.
+
 ![mitre_details](mitre_details.png?width=500px)
 
 ---
 
 ### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
 
-Review the Event Monitor in FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) to find the following:
+Use what you have learned about Threat Hunting in FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) to find the following flags:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | What is the Execution technique associated with LockBit.exe on the Domain Controller? | 3 |
-| 2 | What MITRE Tech ID is assigned for this tactic? | 3 |
+| 1 | **Threat Hunting:** What is the MITRE Tech ID for the Execution technique associated with LockBit.exe on the Domain Controller? | 5 |
+| 2 | **Tactical Threats:** What is the name of the Execution technique associated with LockBit.exe on the Domain Controller? | 5 |

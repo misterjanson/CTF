@@ -45,11 +45,11 @@ FortiEDR has the ability to block credential access attemps out-of-the-box.
 1. Click *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Review the incident for *winlogon.exe* on the device *The-Flame* that shows the injected process attempt to connect to credentials.
 
-![](creds1.png?width=500px)
+![](creds1.png?width=700px)
 
 3. Go to *Security Settings > Security Events > [Security Policies](https://xperts2025.fortiedr.com/#/security_settings/security_events/security-policies)*. Expand the *Exfiltration Prevention* policy and review the first rule *Access to Critical System Information*. 
 
-![](vss2.png?width=500px)
+![](vss2.png?width=700px)
 
 4. The *ADVANCED POLICY & RULE DATA* section at the bottom of the windows provide details on specific rules:
 > Rule Details
@@ -71,12 +71,12 @@ Monitor for unexpected processes interacting with LSASS.exe.
 2. Navigate to *Incidents & Events > Incidents > MITRE ATT&CK®:Attack*
 3. Under the column header for the **Credential Access** tactic find the tile for **OS Credential Dumping**. An icon and count displays on the tile. 
 
-![faz_cred_dump](faz_cred.png?width=600px)
+![faz_cred_dump](faz_cred.png?width=700px)
 
 4. Mouse over the tile to display information in a tooltip.
 5. Click on the Event/Incident count to open a pane for this technique. You can toggle between table views for *Events* and *Incidents*.
 
-![faz_event_incident](faz_event_incident.png?width=600px)
+![faz_event_incident](faz_event_incident.png?width=700px)
 
 The table view for *Events* includes the following information:
 
@@ -100,11 +100,11 @@ The table view for *Incidents* includes the following information:
 
 6. Click the incident count to open the *Incidents & Events > Incidents > Incidents* pane in a new tab. 
 
-![faz_incident_count](faz_incident_count.png?width=600px)
+![faz_incident_count](faz_incident_count.png?width=700px)
 
 7. Review the filtered incidents of the selected technique.
 
-![faz_incident](faz_incident.png?width=600px)
+![faz_incident](faz_incident.png?width=700px)
 
 ---
 
@@ -118,4 +118,4 @@ Passwords are typically stored as hashes. One common method to discover these pa
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | What is the clear-text password?  | 10 |
+| 1 | **It's Easy as ABC:** What is the clear-text password?  | 7 |

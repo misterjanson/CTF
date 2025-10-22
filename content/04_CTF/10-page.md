@@ -33,10 +33,13 @@ You should have received a survey asking for feedback on this workshop. We highl
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | The "Pool Party" technique allows injecting processes using which thread pool?  | 3 |
-| 2 | FortiMDR has published a case study for which major energy drink brand?  | 3 |
-| 3 | Fortinet lists the most vulnerable devices for C2 attacks in their cyber glossary. What is the third most targeted device type?  | 3 |
-| 4 | What is Fortinet’s Threat Radar overall score for Black Basta ransomware?  | 5 |
-| 5 | FortiEDR 7.2 integrates Adversary Centric Intelligence (ACI) from what Fortinet product? ?  | 3 |
-| 6 | What Japanese video game that is the source of an infamous meme is referenced in this workshop?   | 2 |
-| 7 | What infamous attack did the US indict Russian GRU Unit officers (associated with Sandworm Team) of in 2017?   | 3 |
+| 1 | **All Your Base:** What Japanese video game that is the source of an infamous meme is referenced in this workshop?   | 2 |
+| 2 | **Pool Party!:** The "Pool Party" technique allows injecting processes using which thread pool?  | 3 |
+| 3 | **Just Wing It:** FortiMDR has published a case study for which major energy drink brand?  | 2 |
+| 4 | **Check the Glossary:** Fortinet lists the most vulnerable devices for C2 attacks in their cyber glossary. What is the third most targeted device type?  | 2 |
+| 5 | **Integrations:** FortiEDR 7.2 integrates Adversary Centric Intelligence (ACI) from what Fortinet product? ?  | 3 |
+| 6 | **Not the Ones from Arrakis:** What infamous attack did the US indict Russian GRU Unit officers (associated with Sandworm Team) of in 2017?   | 2 |
+| 7 | **Threat Radar:** What is Fortinet’s Threat Radar overall score for Black Basta ransomware?  | 5 |
+
+
+

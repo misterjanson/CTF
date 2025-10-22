@@ -37,21 +37,21 @@ Consider implementing IT disaster recovery plans that contain procedures for tak
 1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
 2. Review the entry for VSSVC.exe.
    
-![](vss1.png?width=600px)
+![](vss1.png?width=700px)
 
 3. Based on this information login to FortiAnalyzer.
 4. Navigate to *Incidents & Events > Incidents > MITRE ATT&CK Coverage*.
 5. Under the *Impact* tactic column click the *Event Handler* icon for *Inhibit System Recovery*.
 
-![faz_inhibit](faz_inhibit.png?width=600px)
+![faz_inhibit](faz_inhibit.png?width=700px)
 
 6. Note that there are two *Outbreak Alert* Event Handlers associated with notorious ransomware campaigns.
 
-![faz_black_basta](faz_black_basta.png?width=600px)
+![faz_black_basta](faz_black_basta.png?width=700px)
 
 7. Click on the event handler for Black Basta Ransomware to view the list of 28 techniques used for detecting this ransomware. Note that this includes [T1490 Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/).
 
-![faz_t1490](faz_t1490.png?width=600px)
+![faz_t1490](faz_t1490.png?width=700px)
 
 ---
 
@@ -73,11 +73,11 @@ We’ll use our knowledge of use the common practice of shadow copy deletion to 
 2. In the Filters area use the following search criteria: ```Target.Process.CommandLine: ("Delete Shadows \/All \/Quiet")```
 3. In the Filters area, at the far right of the page, click the ellipses icon  and select *Save Query*.
 
-![query](save_query.png?width=500px)
+![query](save_query.png?width=700px)
  
 2. The following displays populated with the current filter definitions. The Category, Device, and Time dropdown menus show the filter selections and the box underneath it shows the actual query string.
 
-![query2](save_query_2.PNG?width=500px)
+![query2](save_query_2.PNG?width=700px)
 
 3. Fill in the *Query Name* and *Description* fields with information that is meaningful to this query. There are various options that can be modified for queries such as creating tags or specifying this as a Community Query, no other modification will be needed for this exercise. We can use the MITRE page for [Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/) to add clarification to this query, try using the following (where *XX* are your initials):
 
@@ -85,17 +85,17 @@ We’ll use our knowledge of use the common practice of shadow copy deletion to 
 |------------|-------------|
 | XX T1490   | A number of native Windows utilities have been used by adversaries to disable or delete system recovery features: vssadmin.exe can be used to delete all volume shadow copies on a system |
 
-![query3](save_query_3.PNG?width=500px)
+![query3](save_query_3.PNG?width=700px)
 
 4. Check the **Scheduled Query** option to automate the process of detecting threats so that this query is run automatically according to the schedule that you define. For the purposes of this exercise, we will configure the query to run every **15 Minutes** with a **Malicious** classification. A security event is automatically created in the Event Viewer upon detecting threats (query matches). Notifications are sent according to the security event’s definition, such as via email, syslog, and so on. You can also configure playbook actions for the triggered security events from the scheduled query.
 
-![](savequery3.png?width=300px)
+![](savequery3.png?width=600px)
 
 5. Click **Save** to save this query so that it is available to be redisplayed, as described below. The system runs the query immediately to verify that it is functional.
 
 6. To display a Saved Query, on the *Filters* area, at the far right of the page, click the eclipsis icon and select *Saved* Queries.  The following displays listing all the queries that were saved using the Save Query option.
 
-![](savequery4.png?width=500px)
+![](savequery4.png?width=600px)
 
 Scheduled query options are as follows:
 
@@ -114,9 +114,9 @@ Scheduled query options are as follows:
 ---
 
 ### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
-FortiAnalyzer includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
+[FortiAnalyzer](https://98.82.30.66/ui/login/) (`xperts25` / `xPerts_54321$`) includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | What is the Fortinet Signature ID for Black Basta Ransomware?  | 3 |
-| 2 | What is the Fortinet virus signature name for Akira Ransomware?  | 3 |
+| 1 | **Signature Lookup:** What is the Fortinet Signature ID for Black Basta Ransomware?  | 3 |
+| 2 | **Virus Lookup:** What is the Fortinet virus signature name for Akira Ransomware?  | 3 |
