@@ -55,6 +55,10 @@ During the attack scenario the attacker used a process injection technique to es
 
 ![investigate_injection](investigate_injection.png?width=700px)
 
+8. Return to the *Incidents* page and clear this search filter.
+
+![alt text](clear_filters.png)
+
 
 {{% notice note %}}Some techniques can fall under the category of multiple tactics. In this case we see that process injection is a technique of both the **Privilege Escalation** and **Defense Evasion** tactics.{{% /notice %}}
 
