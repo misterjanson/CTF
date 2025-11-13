@@ -95,7 +95,7 @@ Each individual facet pane summarizes the top five items for that facet. For exa
 
 Facets provide an easy-to-use mechanism to aggregate the results in the Activity Events tables. In addition, you can also further narrow the results in the Activity Events table directly from the facets by including or excluding specific values. For example, when you hover over an item in a facet pane, a green and red button appear in its row. 
 
-6. In the **Remote Port** table hover over port 135 and click the green plus button to include that item as a filter. Both items will be highlighted in green indicating they have been marked as an inclusion filter.
+6. In the **Remote Port** table hover over port 135 and click the green plus button to include that item as a filter. This item will be highlighted in green indicating it has been marked as an inclusion filter.
 7. Click the **Apply** button to apply the additional filtering criteria to the threat hunting query.
 
 ![facet_apply](facet_apply.png?width=700px)
