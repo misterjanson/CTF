@@ -42,12 +42,12 @@ Do not put user or admin domain accounts in the local administrator groups acros
 
 FortiEDR has the ability to block credential access attemps out-of-the-box.
 
-1. Click *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
+1. Click *Incidents* in the FortiEDR Central Manager
 2. Review the incident for *winlogon.exe* on the device *The-Flame* that shows the injected process attempt to connect to credentials.
 
 ![](creds1.png?width=700px)
 
-3. Go to *Security Settings > Security Events > [Security Policies](https://xperts2025.fortiedr.com/#/security_settings/security_events/security-policies)*. Expand the *Exfiltration Prevention* policy and review the first rule *Access to Critical System Information*. 
+3. Go to *Security Settings > Security Events > Security Policies*. Expand the *Exfiltration Prevention* policy and review the first rule *Access to Critical System Information*. 
 
 ![](vss2.png?width=700px)
 
@@ -67,7 +67,7 @@ Monitor for unexpected processes interacting with LSASS.exe.
 
 ### FortiAnalyzer Detection :detective:
 
-1. Login to [FortiAnalyzer](https://98.82.30.66/ui/login) (`xperts25` / `xPerts_54321$`)
+1. Login to FortiAnalyzer
 2. Navigate to *Incidents & Events > Incidents > MITRE ATT&CK®:Attack*
 3. Under the column header for the **Credential Access** tactic find the tile for **OS Credential Dumping**. An icon and count displays on the tile. 
 
@@ -113,7 +113,7 @@ The table view for *Incidents* includes the following information:
 
 ---
 
-### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
+### Capture The Flag :checkered_flag:
 Passwords are typically stored as hashes. One common method to discover these passwords is to “crack” them. Depending on the complexity of the hash this can be difficult and time consuming, however there are online tools that can attempt to crack passwords and can often easily discover common passwords from hashes. See if you can crack the password of this MD5 hash: **482c811da5d5b4bc6d497ffa98491e38** 
 
 | # | Question/Flag | Points |

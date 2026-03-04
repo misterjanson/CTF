@@ -34,7 +34,7 @@ Consider implementing IT disaster recovery plans that contain procedures for tak
 
 ### FortiEDR Prevention :police_officer:
 
-1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
+1. Click on *Incidents* in the FortiEDR Central Manager
 2. Review the entry for VSSVC.exe.
    
 ![](vss1.png?width=700px)
@@ -69,7 +69,7 @@ After filtering the activity events displayed in the result tables, you can save
 
 We’ll use our knowledge of use the common practice of shadow copy deletion to inhibit system recovery to create a scheduled query. 
 
-1. Go to *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
+1. Go to *Threat Hunting* in the FortiEDR Central Manager
 2. In the Filters area use the following search criteria: ```Target.Process.CommandLine: ("Delete Shadows \/All \/Quiet")```
 3. In the Filters area, at the far right of the page, click the ellipses icon  and select *Save Query*.
 
@@ -79,7 +79,7 @@ We’ll use our knowledge of use the common practice of shadow copy deletion to 
 
 ![query2](save_query_2.PNG?width=700px)
 
-3. Fill in the *Query Name* and *Description* fields with information that is meaningful to this query. There are various options that can be modified for queries such as creating tags or specifying this as a Community Query, no other modification will be needed for this exercise. We can use the MITRE page for [Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/) to add clarification to this query, try using the following (where *XX* are your initials):
+3. Fill in the *Query Name* and *Description* fields with information that is meaningful to this query. There are various options that can be modified for queries such as creating tags or specifying this as a Community Query, no other modification will be needed for this exercise. We can use the MITRE page for [Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/) to add clarification to this query, **USE** the following (where *XX* are your initials):
 
 | Query Name | Description |
 |------------|-------------|
@@ -113,8 +113,8 @@ Scheduled query options are as follows:
 
 ---
 
-### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
-[FortiAnalyzer](https://98.82.30.66/ui/login/) (`xperts25` / `xPerts_54321$`) includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
+### Capture The Flag :checkered_flag:
+FortiAnalyzer includes Event Handlers based on FortiGuard Outbreak Alerts. Review the MITRE ATT&CK Coverage map to identify Event Handlers and their Rules in relation to the detection seen in this lab.
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|

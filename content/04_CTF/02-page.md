@@ -45,8 +45,8 @@ Block execution of code on a system through application control, and/or script b
 
 FortiEDR provides multiple out-of-the-box policies. Each policy comes with multiple highly intelligent rules that enforce it. In regards to how FortiEDR can stop the malicious file that was executed in the attack scenario let's look at a FortiEDR security policy.
 
-1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
-2. Click on *Security Settings > Security Events > [Security Policies](https://xperts2025.fortiedr.com/#/security_settings/security_events/security-policies).*
+1. Login to the **FortiEDR Central Manager**
+2. Click on *Security Settings > Security Events > Security Policies*
 3. The Security Policies page displays a row for each security policy. Each policy row can be expanded to show the rules that it contains. In this case we'll focus on the *Execution Prevention* policy. This policy blocks the execution of files that are identified as malicious or suspected to be malicious. For this policy, each file is analyzed to find evidence for malicious activity.
 
 ![security_policy](security_policy.png?width=700px)
@@ -78,7 +78,7 @@ attacks like ransomware in real time.{{% /notice %}}
 
 In this case the *Malicous File Detected* rule will satisfy the recommendation by MITRE to **mitigate** execution on a system. Let's review this rule in action for the *Windows_Update.exe* file that was downloaded during the attack scenario.
 
-8. Click on [Incidents](https://xperts2025.fortiedr.com/#/incidents) in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) and click on the line for *Windows_Update.exe* to expand a list of events. Incidents are shown descending by default (from newest to oldest).
+1. Click on Incidents in the FortiEDR Central Manager and click on the line for *Windows_Update.exe* to expand a list of events. Incidents are shown descending by default (from newest to oldest).
 
 ![windows_update_event](windows_update_event.png?width=700px)
 
@@ -108,7 +108,7 @@ The Investigation View window provides a comprehensive overview and event analys
 
 ### Detection :mag:
 
-**File Creation** [ID: DS0022](https://attack.mitre.org/datasources/DS0022/)
+**File Creation** [ID: DC0039](https://attack.mitre.org/datacomponents/DC0039/)
 
 Monitor for newly constructed files that are downloaded and executed on the user's computer.
 
@@ -118,7 +118,7 @@ Monitor for newly constructed files that are downloaded and executed on the user
 
 FortiEDR’s Threat Hunting functionality enables you to search for many types of Indicators of Compromise (IOCs) and malware across your entire environment in order to enable enhanced detection. Searching can be based on various attributes of files, registry keys and values, network, processes, event log and activity event types. The attributes are useful when considering MITRE's detection recommendations.
 
-1. Access the Threat Hunting page by clicking *Threat Hunting* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`).
+1. Access the Threat Hunting page by clicking *Forensic > Threat Hunting* in the FortiEDR Central Manager
 
 The Threat Hunting page contains the following areas:
 
@@ -177,8 +177,8 @@ MITRE ATT&CK also provides information on threat [groups](https://attack.mitre.o
 
 ---
 
-### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
-Explore the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) to find the following flags:
+### Capture The Flag :checkered_flag:
+Explore the FortiEDR Central Manager to find the following flags:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|

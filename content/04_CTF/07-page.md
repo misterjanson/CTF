@@ -49,7 +49,7 @@ One of the most devastating aspects of a ransomware attack is that many variants
 
 Automatic Incident Response (AIR) playbooks can be configured to isolate a device via the FortiEDR Collector, or to leverage FortiNAC for isolation. 
 
-1. In the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) navigate to *Security Settings > [Playbooks](https://xperts2025.fortiedr.com/#/security_settings/playbooks)* and expand the *Default Playbook*.
+1. In the FortiEDR Central Manager navigate to *Security Settings > Playbooks* and expand the *Default Playbook*.
 
 ![air_isolate](air_isolate.png?width=700px)
 
@@ -77,7 +77,7 @@ The LockBit ransomware scans for port 135 which is captured by the FortiEDR thre
 
 The continuous, realtime collection of Threat Hunting data produces numerous activity events. The sheer volume of activity data can make working directly with these activity events seem cumbersome at times. Therefore, FortiEDR uses **facets** to summarize the data displayed in the results tables. **Facets** are predefined in FortiEDR and represent the same data that is displayed in the results tables, but in an aggregated form. As such, facets represent the aggregation of the values in the results tables.
 
-1. Login to the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
+1. Login to the FortiEDR Central Manager
 2. Click on *Threat Hunting*.
 3. In the Filters dialog box type `LockBit.exe` and press enter. This will display numerous entries in the Activities Event Table.
 
@@ -123,10 +123,10 @@ Facets provide an easy-to-use mechanism to aggregate the results in the Activity
 
 ---
 
-### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
-In the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) Threat Hunting module use the **Facets and Results** table identify the text **file created** by LockBit that has information on how to decrypt the data.
+### Capture The Flag :checkered_flag:
+In the FortiEDR Central Manager Threat Hunting module use the **Facets and Results** table identify the text **file created** by LockBit that has information on how to decrypt the data.
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
 | 1 | **Ransom Note:** What is the name of this file?  | 5 |
-| 2 | **A Layered Approach:** Find how to retrieve this file within the Threat Hunting module. Once retrieved, what is the URL of the first TOR site listed to contact the ransomware operator?  | 10 |
+

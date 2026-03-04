@@ -1,9 +1,9 @@
 ---
-title: Capture The Flag with FEDR & FAZ
+title: Capture The MITRE ATT&CK Flag
 weight: 1
 archetype: home
 ---
-![alt text](xperts2025_logo.PNG)
+![alt text](brainstorm.PNG)
 ## Workshop Guide
 
 **Written By:** Jason Palm, Kyle Krisher, & Jason Graun

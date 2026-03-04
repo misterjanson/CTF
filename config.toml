@@ -13,7 +13,7 @@ enableEmoji = true
 
 ################################ BEGIN EDITING ################################
 # Display Title of the project
-title = "Capture the Flag with FortiEDR and FortiAnalyzer"
+title = "Capture the MITRE ATT&CK Flag"
 
 [params]
 # Author of the site, will be used in meta information
@@ -22,20 +22,20 @@ author.name = "Jason Palm, Kyle Krisher, Jason Graun"
 # Select a color theme.
 # special
 # themeVariant = "Xperts2024"
-#themeVariant = "Xperts2023"
-# red
-themeVariant = "Xperts2025"
+# themeVariant = "Xperts2023"
+# themeVariant = "red"
+# themeVariant = "Xperts2025"
 # purple
-# themeVariant = "Spotlight"
+#themeVariant = "Spotlight"
 # green
 # themeVariant = "Demo"
 # blue
-#themeVariant = "UseCase"
+themeVariant = "UseCase"
 
 # The banner text under Fortinet logo on the top left of the project. Better to be short.
-logoBannerText = "CTF with FEDR & FAZ"
+logoBannerText = "CTF MITRE ATT&CK"
 # Small text under the title
-logoBannerSubText = "Fortinet Partners"
+logoBannerSubText = "Fortinet SecOps"
 ################################# END EDITING #################################
 
 

@@ -29,7 +29,7 @@ You should have received a survey asking for feedback on this workshop. We highl
 
 ---
 
-### [Capture The Flag](http://3.19.227.225:8000/) - Bonus :checkered_flag:
+### Capture The Flag - Bonus :checkered_flag:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|

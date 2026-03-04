@@ -40,9 +40,9 @@ Network intrusion detection and prevention systems that use network signatures t
 
 ### FortiEDR Prevention :police_officer:
 
-1. Click on *Incidents* in the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`)
+1. Click on *Incidents* in the FortiEDR Central Manager
 2. Find the incident where *cloud.exe* is spawned as a child process of *Windows_Update.exe*
-3. Review the event graph, noting that *cloud.exe* is making a network connection to IP *1.123.37.68*. Click on the *Investigate* button.
+3. Review the event graph, noting that *cloud.exe* is making a network connection to IP *46.101.210.101*. Click on the *Investigate* button.
 
 ![](cc1.png?width=700px)
 
@@ -95,12 +95,12 @@ Monitor for web traffic to/from known-bad or suspicious domains and analyze traf
 
 ### FortiAnalyzer Detection :detective:
 
-1. Login to [FortiAnalyzer](https://98.82.30.66/ui/login/) (`xperts25` / `xPerts_54321$`)
+1. Login to FortiAnalyzer
 2. Go to the *Incidents & Events > Indicators* pane which consolidates all detected indicators for centralized analysis. This streamlines threat evaluation and enables SOC analysts to take swift action to mitigate risks.
 
 ![faz_indicators](faz_indicators.png?width=700px)
 
-3. Double-click on the entry for IP 1.123.37.68 to view the indicator enrichment.
+3. Double-click on the entry for IP 46.101.210.101 to view the indicator enrichment.
 
 ![faz_enrich](faz_enrich.png?width=700px)
 
@@ -127,12 +127,12 @@ Playbooks improve response times and reduce manual workload. In this case the *I
 
 ---
 
-### [Capture The Flag](http://3.19.227.225:8000/) :checkered_flag:
-Use the FortiEDR [Central Manager](https://xperts2025.fortiedr.com/) (`xperts25` / `xPerts_54321$`) and [FortiAnalyzer](https://98.82.30.66/ui/login/) (`xperts25` / `xPerts_54321$`) to find the following flags:
+### Capture The Flag :checkered_flag:
+Use the FortiEDR Central Manager and FortiAnalyzer to find the following flags:
 
 | # | Question/Flag | Points |
 |---|---------------|:--------:|
-| 1 | **Event Analysis:** Once *Windows_Update.exe* was executed it spawned another process named *cloud.exe*. This process began making a connection to an Australian IP address that served as Command & Control. What remote port at this IP address was being contacted?  | 5 |
-| 2 | **Query Question:** The FAZ connector for VirusTotal support multipe actions. What is the first action listed in the actions table for the VirusTotal connector?  | 5 |
+| 1 | **Event Analysis:** Once *Windows_Update.exe* was executed it spawned another process named *cloud.exe*. This process began making a connection to a German IP address that served as Command & Control. What remote port at this IP address was being contacted?  | 5 |
+| 2 | **Query Question:** The FAZ connector for VirusTotal support multiple actions. What is the first action listed in the actions table for the VirusTotal connector?  | 5 |
 
 
