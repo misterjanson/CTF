@@ -3,7 +3,7 @@ title: Capture The MITRE ATT&CK Flag
 weight: 1
 archetype: home
 ---
-![alt text](brainstorm.PNG)
+
 ## Workshop Guide
 
 **Written By:** Jason Palm, Kyle Krisher, & Jason Graun
